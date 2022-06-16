@@ -1,0 +1,1600 @@
+Question	Answer
+Bagaimana cara generate payment file ke Bank Mandiri?	"Langkah 1 : Masukan TCODE ZFI_PAY_MANDIRI_REG
+Langkah 2 : Masukan ""Run Date"" dan ""Run ID""
+Langkah 3 : tick ""Regenerate File"" dan ""Test Run""
+Langkah 4 : Klik Tombol Execute
+Langkah 5 : Review Payment File
+Langkah 6 : Klik Tombol Back 
+Langkah 7 : Un-tick ""Test Run"" 
+Langkah 8 : Klik Tombol Execute"
+Bagaimana cara melakukan revisi NACK pada file Payment dari Bank Mandiri? 	"Langkah 1 : reverse Payment menggunakan tcode FBRA
+Langkah 2 : Delete Payment Proposal menggunakan tcode F110
+Langkah 3 : update data transaksi yang salah berdasarkan file NACK yang di kirimkan dari Bank Mandiri 
+Langkah 4 : Buat Payment Proposal Baru Menggunakan tcode F110"
+Bagaimana cara menginput Internal Order Planning?	"Langkah 1 : Buka t-code KPF6
+Langkah 2 : Isi selection screen (Controlling Area, Version, Fiscal Year, Order Group, Cost Element Group)
+Langkah 3 : Pilih Entry - Free
+Langkah 4 : Klik Overview
+Langkah 5 : Klik Enable Macros jika terdapat pop-up screen
+Langkah 6 : Masukan angka planning dengan maksimal total field 9999
+Langkah 3 : Klik Save"
+Bagaimana cara melakukan mass reversal document payment dan menghapus payment run?	"Langkah 1 : Masukan Tcode SE38 dan masukan program RFF110_REVERSE
+Langkah 2 : update data transaksi yang salah berdasarkan file NACK yang di kirimkan dari Bank Mandiri
+Langkah 3 : Buat Payment Proposal Baru menggunakan tcode F110"
+Bagaimana cara menghapus Asset?	"Langkah 1 : Buka t-code AS02
+Langkah 2 : Pastikan capitalization date = blank
+Langkah 3 : Pastikan balance asset = 0 untuk currency IDR & USD
+Langkah 4 : Klik Asset Block/ Delete >> Delete"
+Bagaimana cara memetakan Cost Center & akun GL?	"Langkah 1 : Buka t-code ZCO_COST_MAP
+Langkah 2 : Masukan GL Account & Cost Center yang akan dipetakan 
+Langkah 3 : Masukan kategory yang sesuai dengan ketentuan validasi yang dibutuhkan 
+Langkah 4 : Klik Save"
+Bagaimana cara membuat Cost Element Group?	"Langkah 1 : Buka t-code KAH1
+Langkah 2 : Masukkan penamaan Cost Element Group sesuai dengan naming convention
+Langkah 3 : Klik Lower Level untuk membuat sub-group satu level dibawah
+Langkah 4 : Klik Same Level untuk membuat sub-group pada level yang sama
+Langkah 5 : Klik Cost Element untuk assign GL Account yang sesuai 
+Langkah 6 : Save"
+Bagaimana cara membuat Internal Order Group?	"Langkah 1 : Buka t-code KOH1
+Langkah 2 : Masukkan penamaan Cost Center Group sesuai dengan naming convention
+Langkah 3 : Klik Lower Level untuk membuat sub-group satu level dibawah
+Langkah 4 : Klik Same Level untuk membuat sub-group pada level yang sama
+Langkah 5 : Klik Cost Center untuk assign Cost Center yang sesuai 
+Langkah 6 : Save"
+Bagaimana cara membuat Cost Center Group?	"Langkah 1 : Buka t-code KSH1
+Langkah 2 : Masukkan penamaan Cost Center Group sesuai dengan naming convention
+Langkah 3 : Klik Lower Level untuk membuat sub-group satu level dibawah
+Langkah 4 : Klik Same Level untuk membuat sub-group pada level yang sama
+Langkah 5 : Klik Cost Center untuk assign Cost Center yang sesuai 
+Langkah 6 : Save"
+Bagaimana cara menampilkan report Internal Order?	"Langkah 1 : Buka t-code KOC2
+Langkah 2 : Klik Orders: Actual/ Plan/ Variance 
+Langkah 3 : Isi selection screen (Fiscal Year, Period, Order & Cost Element
+Langkah 4 : Klik Execute"
+Bagaimana cara generate Remittance advice? 	"Langkah 1 : Buka tcode ZFI_REMIT_ADV
+Langkah 2 : Masukan selection screen sesuai tanggal Payment 
+Langkah 3 : Klik tombol generate invoice payment list
+Langkah 4 : Review data yang muncul pada Payment List
+Langkah 5 : Un-tick Test run
+Langkah 6 : Click tombol generate email to vendor "
+Bagaimana cara untuk melakukan pengecekan atas settlement Maintenance Order?	"Langkah 1 : Buka t-code KOB1N
+Langkah 2 : Masukan order 200000000000 - 299999999999
+Langkah 3 : Masukan posting date untuk bulan berjalan 
+Langkah 4 : Klik more setting 
+Langkah 5 : Update maximum no of hits sebanyak 9999999
+Langkah 6 : Execute
+Langkah 7 : Filter Creation Date sampai dengan day-1 dari posting date yang dipilih
+Langkah 8 : Pastikan balance sudah 0"
+Bagaimana cara menginput Cost Center Planning?	"Langkah 1 : Buka t-code KP06
+Langkah 2 : Isi selection screen (Controlling Area, Version, Fiscal Year, Cost Center Group, Cost Element Group)
+Langkah 3 : Pilih Entry - Free
+Langkah 4 : Klik Overview
+Langkah 5 : Klik Enable Macros jika terdapat pop-up screen
+Langkah 6 : Masukan angka planning dengan maksimal total field 9999
+Langkah 3 : Klik Save"
+Bagaimana cara menampilkan Freight Cost Allocation Report?	"Langkah 1 : Buka t-code ZCO_FREIGHT_ALC_RPT
+Langkah 2 : Isi selection screen (Company Code, Matdoc Creation Date)
+Langkah 3 : Pilih Status N untuk Error & C untuk Completed
+Langkah 4 : Execute"
+Bagaimana cara menginput Cost Center yang dapat digunakan dalam pembuatan Maintenance Order dengan type Accident?	"Langkah 1 : Buka t-code ZCO_CCSUBS_MAP
+Langkah 2 : Masukkan company code
+Langkah 3 : Masukkan Cost Center From, Cost Center To, Cost Center Destination & Remarks
+Langkah 4 : Save"
+Bagaimana cara memetakan substitusi cost center untuk Maintenance Order dengan type Accident?	"Langkah 1 : Buka t-code ZCO_CCSUBS_MAP
+Langkah 2 : Masukkan company code
+Langkah 3 : Masukkan Cost Center From, Cost Center To, Cost Center Destination & Remarks
+Langkah 4 : Save"
+Bagaimana cara Monitoring Import file electronic Bank statement ?	"Langkah 1 : Buka tcode ZFI_EBS_MANDIRI_MONI
+Langkah 2 : Pilih tombon ""Monitoring"" dan Masukan Tanggal yang sesuai
+Langkah 3 : Input EBS ID lalu klik tombol Execute "
+Bagaimana cara memetakan substitusi cost center untuk Maintenance Order dengan component Tire?	"Langkah 1 : Buka t-code ZCO_CCSUBS_MAP
+Langkah 2 : Masukkan company code
+Langkah 3 : Masukkan Cost Center From, Cost Center To, Cost Center Destination & Remarks
+Langkah 4 : Save"
+Bagaimana cara melakukan Re-process Electronic Bank Statement?	"Langkah 1 : Buka tcode ZFI_EBS_MANDIRI_MONI
+Langkah 2 : Pilih tombon ""Re-process"" dan Masukan Tanggal yang sesuai
+Langkah 3 : Input EBS ID lalu klik tombol Execute"
+Bagaimana cara melakukan  mass upload journal?	"Langkah 1 : Buka t-code ZFI_UPL_JOURNAL
+Langkah 2 : Masukan template MPJ/ INV 
+Langkah 3 : Klik Upload File
+Langkah 4 : Execute 
+Langkah 5 : Pastikan beberapa item dibawah ini: 
+Jika terdapat account tax, pastikan tax reporting date, tax base amount, tax code terisi
+Jika terdapat account cost, pastikan cost object (cost center, order, wbs element) terisi & sudah sesuai dengan mapping validation
+Jika terdapat account accrued scrap sales, pastikan mengisi internal order 
+Jika terdapat cost object WBS Element, pastikan GL Account yang digunakan adalah GL trf to CAPEX
+Jika currency IDR & USD diinput, pastikan amount sudah 0 dan field terisi semua "
+Bagaimana cara memetakan substitusi cost center untuk transaksi Fuel?	"Langkah 1 : Buka t-code ZCO_CCFUEL_MAP
+Langkah 2 : Masukkan company code
+Langkah 3 : Masukkan Cost Center From, Cost Center To, Cost Center Destination & Remarks
+Langkah 4 : Save"
+Bagaimana cara mengecek log perubahan dalam Cost Mapping?	"Langkah 1 : Buka t-code ZCO_COST_MAP
+Langkah 2 : Klik utilities >> changed log
+Langkah 3 : Masukan Start Date, End Date 
+Langkah 4 : Klik Output Options - ALV Grid Display
+Langkah 5 : Klik Execute"
+Bagaimana cara melakukan reversal untuk invoice dengan PO?	"Langkah 1 : masukan tcode MR8M
+Langkah 2 : Masukan nomor MIRO, Fiscal Year, dan reversal Reason
+Langkah 3 : Klik Tombol Execute"
+Bagaimana cara melalukan print massal terhadap maintenance order form?	"Cara 1
+Langkah 1 : Masuk T-Code ZPM_PRINT_MO_FORM
+Langkah 2 : Input Kode Plant
+Langkah 3 : Input nomor Maintenance Order yang akan di-print secara massal dengan step berikut:
+a. Klik “multiple selection” untuk menginput nomor maintenance order secara massal
+b. Copy data maintenance order, kemudian klik “upload from clipboard” untuk paste data maintenance order yang ingin di-print
+c. Pastikan data maintenance order sudah muncul seluruhnya di kolom “single value”
+d. Klik “execute”
+
+Cara 2
+Langkah 1 : Masuk T-Code  IW38
+Langkah 2 : Input nomor Maintenance Order yang akan di-print secara massal dengan step berikut:
+a. Klik “multiple selection” untuk menginput nomor maintenance order secara massal
+b. Copy data maintenance order, kemudian klik “upload from clipboard” untuk paste data maintenance order yang ingin di-print
+c. Pastikan data maintenance order sudah muncul seluruhnya di kolom “single value”
+d. Klik “execute”
+Langkah 3 : Print Order dengan langkah berikut:
+a. Pilih/select nomor maintenance order yang akan di-print (baris maintenance order yang dipilih akan berwarna biru) 
+b. Klik menu “order” kemudian pilih “Print Order”
+Langkah 4 : Pop-up screen untuk Print Maintenance Order akan muncul sejumlah MO yang diinput sebelumnya."
+Bagaimana cara mengetahui MPN pada material number SAP?	"Langkah 1 : Masuk T-Code ZMM_MATDESC_REPORT
+Langkah 2 : Masukkan kode material beserta plant 
+Langkah 3 : Execute program"
+Bagaimana cara melakukan re-schedule terhadap preventive maintenance order?	"Langkah 1 : Masuk T-Code IP10
+Langkah 2 : Masukkan maintenance plan yang ingin di re-schedule
+Langkah 3 : Re-schedule maintenance plan 
+a. Pilih salah satu schedule maintenance plan 
+b. Pilih new start
+Langkah 4 : Pilih untuk melakukan skip atau delete – maintenance schedule. Memilih skip berarti maintenance schedule akan memulai waktu mulai baru namun schedule yang lama tetap akan ada (historis). Sementara, memilih delete akan membuat maintenance schedule akan memulai waktu mulai baru dan schedule sebelumnya akan dihapus.
+Langkah 5 : Tampilan jika schedule di skip"
+Bagaimana cara melakukan cancel terhadap maintenance order yang sudah di-approved?	"Langkah 1 : Masuk T-Code IW41
+Langkah 2: Masukkian nomor Maintenance Order. Lakukan konfirmasi dengan mencantumkan justifikasi cancelation pada field ""Confirm. Text""
+Langkah 3 : Masuk T-Code IW32
+Langkah 4 : Masukkan nomor Maintenance Order
+Langkah 5 :  Klik button TECO
+Langkah 6 : Masuk kembali ke T-Code IW32
+Langkah 7 : Masukkan nomor Maintenance Order
+Langkah 8 : Ubah user status menjadi MOCA (Cancelled)"
+Bagaimana cara melakukan cancel terhadap maintenance order yang belum di-approved?	"Langkah 1 : Masuk T-Code IW32
+Langkah 2 : Masukkan nomor Maintenance Order
+Langkah 3 :  Ubah user status menjadi MODE (Do Not Execute)
+Langkah 4 : Ikuti menu path berikut ""Order --> Functions --> Complete --> Do not execute"""
+Bagaimana cara merubah user status MO secara massal?	"Langkah 1 : Masuk T-Code  IW38
+Langkah 2 : Input nomor Maintenance Orde dengan step berikut:
+a. Klik “multiple selection” untuk menginput nomor maintenance order secara massal
+b. Copy data maintenance order, kemudian klik “upload from clipboard” untuk paste data maintenance order yang ingin di-print
+c. Pastikan data maintenance order sudah muncul seluruhnya di kolom “single value”
+d. Klik “execute”
+Langkah 3 : Highilight maintenance order yang akan di-update statusnya
+Langkah 4 : Ikuti menu path berikut ""Order --> Carry Out Mass Change""
+Langkah 5 : Masuk pada tab ""Customer Spesific Data""
+Langkah 6 : Highlight field ""User Status"" dan klik tombol choose untuk memindah dari section pool ke section criteria, kemudian klik enter
+Langkah 7 : Input user status yang akan diganti pada field ""New Value""
+Langkah 8 : Klik tombol ""Execute"""
+Bagaimana cara melakukan cancel konfirmasi?	"Langkah 1 : Masuk T-Code IW45
+Langkah 2 : Input nomor maintenance order
+Langkah 3 : Highlight konfirmasi yang akan dilakukan cancel, kemudian tekan F8
+Langkah 4 : Pada screen detail konfirmasi klik button save
+Langkah 5 : Akan muncul pop up screen terkait SAPscriptword, klik Allow
+Langkah 6 : Isi informasi terkait pembatalan konfirmasi pada SAP Word
+Langkah 7 : Klik back"
+Bagaimana cara melakukan cancel konfirmasi secara massal?	"Langkah 1 : Masuk t-code IW47 (Display Confirmations) untuk melakukan pencarian maintenance order atau maintenance confirmation yang ingin di-cancel
+Langkah 2 : Input data untuk mencari maintenance confirmation yang ingin di-cancel
+a. Order Status: tick “in process” dan “completed”
+b. Order: input nomor maintenance order terkait
+c. Entry Date: input tanggal pembuatan maintenance confirmation yang ingin di-cancel
+d. Entered by User: input SAP USER ID yang melakukan penginputan/upload confirmation sebelumnya
+e. Execute (f8): klik execute untuk menampilkan list maintenance confirmation yang ingin di-cancel
+Langkah 3 : Review kembali data maintenance order dan maintenance confirmation yang tidak tepat sebelum melakukan cancellation.
+Langkah 4 : Jika data yang ingin di-cancel sudah sesuai, lakukan mass cancellation dengan langkah berikut:
+a. Pilih/select baris maintenance order-maintenance confirmation yang akan di-cancel
+b. Klik menu “completion confirmation”, kemudian pilih “mass cancellation”
+c. Lengkapi alasan proses cancellation (teks bebas) pada screen confirmation cancellation (contoh: kesalahan format actual time), kemudian klik "
+Bagaimana cara attach dokumen pada MO?	"Langkah 1 : Masuk T-Code  IW32
+Langkah 2 : Masukkan maintenance order yang ingin dilakukan attach document
+Langkah 3 : Pilih services of object 
+Langkah 4 : Menu choose an object akan muncul
+a. Pilih maintenance order
+b. Pilih continue (enter)
+Langkah 5 : Pilih create > Store business docume
+Langkah 6 : Pilih document type > Drag dokumen dalam bentuk PDF yang ingin di attach pada maintenance order 
+Langkah 7 : Pilih allow pada pop up screen
+Langkah 8 : Tulis deskripsi dokumen, pilih continue (enter)
+Langkah 9 : Pilih continue (enter)
+Langkah 10 : Pilih attachment list untuk mengecek dokumen yang telah berhasil dilampirkan"
+Bagaimana cara attach dokumen pada Task List?	"Langkah 1 : Masuk T-Code  IA06
+Langkah 2 : Masukkan kode Task List yang ingin dilakukan attach document
+Langkah 3 : Pilih services for object 
+Langkah 4 : Pilih create > Store business docume
+Langkah 5 : Pilih document type > Drag dokumen dalam bentuk PDF yang ingin di attach pada maintenance order 
+Langkah 6 : Pilih allow pada pop up screen
+Langkah 7 : Tulis deskripsi dokumen, pilih continue (enter)
+Langkah 8 : Pilih continue (enter)
+Langkah 9 : Pilih attachment list untuk mengecek dokumen yang telah berhasil dilampirkan"
+Bagaimana cara melihat outstanding MO Approval?	"Langkah 1 : Masuk T-Code ZMM_RSRV_APPROVAL
+Langkah 2 : Input nomor maintenance order sesuai dengan kebutuhan
+Langkah 3 : Atur range date pada field Base Date untuk melakukan filter berdasarkan tanggal
+Langkah 4 : Tick menu Display Approval List
+Langkah 5 : Input kode berikut pada field Overall Status Code sesuai kebutuhan
+B - Not Fully Approved
+D - Rejected
+N - Approval Not Required
+R - Fully Approved
+Langkah 6 : Klik execute"
+Bagaimana cara melihat outstanding transaksi pada MO?	"Pengecekan Material
+Langkah 1 : Masuk T-Code ZMM_EXPEDITING_RPT
+Langkah 2 : Checkbox parameter Process Status sesuai dengan kebutuhan
+Langkah 3 : Tick radio button Maintenance Order Selection
+Langkah 4 : Input nomor MO, Planner Group, serta period MO
+Langkah 5 : Execute
+Langkah 7 : Akan muncul report terkait, dapat me-refer pada field Reservation Qty, GI Qty, PO Qty, GR Qty
+
+Pengecekan Konfirmasi Pekejerjaan
+Langkah 1 : Masuk T-Code IW32/IW33
+Langkah 2 : Input nomor MO
+Langkah 3 : Check pada field system status untuk MO yang sudah memiliki status CNF menunjukkan bahwa seluruh konfirmasi pekerjaan telah selesai dilakukan
+
+Pengecekan Penyelesaian PO Adhoc
+Langkah 1 : Masuk T-Code ME2K
+Langkah 2 : Input nomor MO pada field Order
+Langkah 3 :  Akan muncul list PO adhoc terhadap MO terkait"
+Bagaimana cara dekativasi task list?	"Langkah 1 : Masuk T-Code IA06
+Langkah 2 : Masukkan kode task list group yang sesuai dan tekan enter
+Langkah 3 : Pilih header 
+Langkah 4 : Pilih deletion flag 
+Langkah 5 : Pilih save"
+Bagaimana cara membuat task list dengan beragam main work center?	"Langkah 1 : Masuk T-Code IA05
+Langkah 2 : Input kode group task list yang akan dibuatkan alternative-nya 
+Langkah 3 : Tekan Enter
+Langkah 4 : Klik New Entries (F6)
+Langkah 5 : Isi informasi task list yang sesuai"
+Bagaimana cara melakukan upload massal pada measurement document?	"Langkah 1 : Masuk T-Code ZPM_MEAS_UPLD
+Langkah 2 : Tick button Download template
+Langkah 3 : Isi informasi equipment yang akan di-download template upload measuring nya
+Langkah 4 : Klik execute
+Langkah 5 : Isi template upload dan save
+Langkah 6 : Pada T-Code ZPM_MEAS_UPLD tick button Upload
+Langkah 7 : Masukkan directory file upload yang telah diisikan pada field ""Measurement doc. Upload""
+Langkah 8 : Tick button New Creation
+Langkah 9 : Klik execute, akan muncul hasil test run terhadap process upload
+Langkah 10 : Jika semua data sudah sukses dan tidak terhdapat error maka klik button Post"
+Bagaimana cara melihat list measuring point pada suatu equipment?	"Langkah 1 : Masuk T-Code IK07
+Langkah 2 : Masukkan nomor equipment pada field ""Equipment""
+Langkah 3 : Klik Execute"
+Bagaimana cara deaktivasi measuring point?	"Langkah 1 : Masuk T-Code IK02
+Langkah 2 : Masukkan nomor measuring point pada field ""measuring point""
+Langkah 3 : Tekan Enter
+Langkah 4 : Ikuti path berikut ""Measuring Points --> Functions --> Active - Inactive --> Deactivate"""
+Bagaimana cara membuat maintenance plan dengan me-referensi pada data yang sudah ada?	"Langkah 1 : Pilih Maintenance Plan yang akan di-copy sebagai template
+Langkah 2 : Ke T-Code IP02	
+Langkah 3 : Input kode maintenance plan yang akan di-copy
+Langkah 4 : Tekan 'Enter'	
+Langkah 5 : Klik Maintenance Plan - Functions - Copy Template - Allow	
+Hal ini dilakukan hanya satu kali untuk setiap maintenance plan yang akan dijadikan template. 
+Jika sebelumnya maintenance plan tersebut sudah pernah di-set 'Allow' sebagai template, maka selanjutnya maintenance plan tersebut dapat di-copy langsung tanpa harus melakukan step ini
+Langkah 6 : Klik 'SAVE'	
+Langkah 7 : Copy kode maintenance plan yang akan di-copy tersebut	
+Langkah 8 : Ke T-Code IP01 untuk membuat Maintenance Plan baru	
+Langkah 9 : Pilih Maintenance Plan Category dan input kode Strategy (jika yang akan dibuat adalah Maintenance Plan tipe strategi)
+Langkah 10 : Paste / input kode Maintenance Plan yang akan di-copy di bagian 'Reference maintenance plan'
+Langkah 11 : Kemudian pilih data apa saja yang akan di-copy dari reference maintenance plan tersebut, dengan men-tick di bagian 'Copy Options'	
+Langkah 12 : Klik 'OK' 	
+Langkah 13 : Data akan otomatis ter-copy		
+Langkah 14 : Klik 'SAVE'	"
+Bagaimana cara melihat schedule pada maintenance plan?	"Langkah 1 : Masuk T-Code IP24
+Langkah 2 : Input informasi Equipment ataupun maintenance plan
+Langkah 3 : execute"
+Bagaimana cara melakukan sorting katalog (damage, cause) pada notifikasi?	"Langkah 1 : Masuk transaction maintain notification (T-Code IW21/ IW22)
+Langkah 2 : Klik 'Search' di kolom 'Damage' / 'Cause'
+Langkah 3 : Klik 'Sort', maka kode akan diurutkan sesuai abjad"
+Bagaimana cara merubah status pada equipment secara massal?	"Langkah 1 : Masuk T-Code IE05
+Langkah 2 : Input Kode Equipment yang akan diubah statusnya
+Langkah 3 : Klik 'Execute'
+Langkah 4 : Highlight Equipment yang akan diubah statusnya
+Langkah 5 : Klik Goto - Carry Out Mass Change
+Langkah 6 : Klik tab 'Customer Specific Data'
+Langkah 7 : Pindahkan 'User Status' dari kolom 'Pool' ke kolon 'Selection Criteria'dengan klik tanda button choose
+Langkah 8 : Klik 'Continue'
+Langkah 9 : Input Status baru di bagian 'New Value'
+Langkah 10 : Klik 'Execute'
+"
+Bagaimana cara merubah status pada funloc secara massal?	"Langkah 1 : Masuk T-Code IL05
+Langkah 2 : Input Kode Funloc yang akan diubah statusnya
+Langkah 3 : Klik 'Execute'
+Langkah 4 : Highlight Funloc yang akan diubah statusnya
+Langkah 5 : Klik Goto - Carry Out Mass Change
+Langkah 6 : Klik tab 'Customer Specific Data'
+Langkah 7 : Pindahkan 'User Status' dari kolom 'Pool' ke kolon 'Selection Criteria'dengan klik tanda button choose
+Langkah 8 : Klik 'Continue'
+Langkah 9 : Input Status baru di bagian 'New Value'
+Langkah 10 : Klik 'Execute'
+"
+Bagaimana cara menampilkan report operation pada task list?	"Langkah 1 : Masuk T-Code IA38 untuk Change / IA39 untuk Display
+Langkah 2 : Input Kode Planner Group di Bagian 'Header Data'
+Langkah 3 : Klik 'Execute'"
+Bagaimana cara melakukan clear terhadap approval MO yang menggantung, dikarenakan reservasi/ MO sudah di-delete?	Langkah 1 : Kontak IT Support Amman untuk melakukan clearing terhadap reservasi yang menggantung
+Bagaimana cara membuat equipment?	"Langkah 1 : Masuk T-Code IE01
+Langkah 2 : Masukkan kode Equipment yang akan dibuat pada field Equipment
+Langkah 3 : Input category equipment yang akan dibuat pada field Equipment Category
+Langkah 4 : Isi seluruh informasi yang mandatory dan relevan 
+Langkah 5 : Pada tab organization masukkan field SettlementOrder dengan mengisi E1. Untuk pembuatan equipment dengan category I - Component , dipastikan agar field SettlementOrder memiliki informasi yang sama dengan superior equipment yang di-assigned
+Langkah 6 : Pilih save (ctrl + s)"
+Bagaimana cara membuat funloc LV1 - LV5?	"Langkah 1 : Masuk T-Code IL01
+Langkah 2 : Masukkan kode functional location 
+Langkah 3 : Isi seluruh informasi yang mandatory dan relevan 
+Langkah 4 : Pilih save (ctrl + s)"
+Bagaimana cara membuat funloc LV6 - LV7?	"Langkah 1 : Masuk T-Code IL01
+Langkah 2 : Masukkan kode functional location 
+Langkah 3 : Isi seluruh informasi yang mandatory dan relevan 
+Langkah 4 : Pada tab organization masukkan field SettlementOrder dengan mengisi E1 (khusus LV6). Untuk pembuatan Funloc level 7, dipastikan agar field SettlementOrder memiliki informasi yang sama dengan superior funloc LV 6 yang di-assigned
+Langkah 5 : Pilih save (ctrl + s)
+Langkah 6 : Display functional location menggunakan t-code IL03
+Langkah 7 : Cek untuk nomor settlement order yang sudah dibuat apakah sudah tersubstitusi secara otomatis menggunakan IO yang sesuai."
+Bagaimana cara mengetahui equipment dengan kategori vendor backcharge?	"Cara 1
+Langkah 1 : Masuk T-Code IE02
+Langkah 2 : Input equipment number kemudian tekan enter
+Langkah 3 : Masuk ke-Tab Vehicle ID/ Measmnts
+Langkah 4 : Check apakah field Mat.Consumption memiliki value B - IFCU Vendor Back Charge
+
+Cara 2
+Langkah 1 : Masuk T-Code IE36
+Langkah 2 : Input equipment number
+Langkah 3 : Hapus data pada field Period
+Langkah 4 : Execute
+Langkah 5 : Check apakah field Mat.Consumption memiliki value B - IFCU Vendor Back Charge
+"
+Bagaimana cara melakukan assignment superior equipment?	"Langkah 1 : Pada screen maintain equipment (IE01/ IE02) masuk ke tab Structure
+Langkah 2 : Klik button Change ""InstLoc"" (Terdapat pada sebelah kanan field Functional loc)
+Langkah 3 : Masukkan kode main equipment pada field Superord.Equip.
+Langkah 4 : Klik Confirm (Shift + F4)
+
+Note: Untuk equipment category I - Component, dapat dilakukan update Internal Order dengan mengikuti Internal Order pada Superior equipment yang di-assign"
+Bagaimana cara merubah settlement rule pada MO?	"Langkah 1 : Masuk T-Code IW32
+Langkah 2 : Masukkan nomor Maintenance Order
+Langkah 3 : Klik button settlement rule (Ctrl + F6) 
+Langkah 4 : Ubah informasi settlement rule pada MO sesuai kebutuhan
+Langkah 5 : Klik back
+Langkah 6 : Klik save"
+Bagaimana mengetahui interchange material pada suatu material tertentu?	"Langkah 1 : Masuk T-Code PIC03
+Langkah 2. :Input kode material yang akan dicek
+Langkah 3 : Tekan ‘Enter’, kemudian akan muncul list interchange parts atas material tersebut"
+Bagaimana cara mengunduh payslip?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih ""My Employee Files"" pada drop down menu
+Langkah 3: Pilih tab ""Payroll""
+Langkah 4: Pilih ""Pay Statement""
+Langkah 5: Klik Icon Download
+
+Via Mobile
+Langkah 1: Unduh aplikasi SuccessFactors di App store / Play store 
+Langkah 2: Masukkan company ID ""AMMAN"" dan masukkan username dan password.
+Langkah 3: Pilih tab ""More""
+Langkah 4: Pilih ""Profile""
+Langkah 5: Pilih ""Payroll""
+Langkah 6: Pilih ""Payroll Information"" 
+Langkah 7: Pilih ""Pay Statement"" dan download
+
+Payslip berhasil di download dalam pdf file"
+Bagaimana cara membuat objective pada tahap objective setting?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih ""Performance"" pada drop down menu
+Langkah 3: Pilih form
+Langkah 4: Scroll hingga section ""Performance Objective Settings""
+Langkah 5: Klik ""+Add Objective""
+Langkah 6: Isi detail dari Objective
+Langkah 7: Klik ""Save Changes""
+
+Via Mobile
+Langkah 1: Akses aplikasi SuccessFactors
+Langkah 2: Pada section ""To-Do"", klik ""Performance Reviews""
+Langkah 3: Pilih form (opsional)
+Langkah 4: Klik icon Plus
+Langkah 5: Pilih ""Performance Objective Settings
+Langkah 6: Isi detail dari Objective
+Langkah 7: Klik ""SAVE"""
+Bagaimana cara membuat objective untuk bawahan pada tahap objective approval?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih ""Performance"" pada drop down menu
+Langkah 3: Pilih form bawahan
+Langkah 4: Scroll hingga section ""Performance Objective Settings""
+Langkah 5: Klik ""+Add Objective""
+Langkah 6: Isi detail dari Objective
+Langkah 7: Klik ""Save Changes""
+
+Via Mobile
+Langkah 1: Akses aplikasi SuccessFactors
+Langkah 2: Pada section ""To-Do"", klik ""Performance Reviews""
+Langkah 3: Pilih form bawahan
+Langkah 4: Klik icon Plus
+Langkah 5: Pilih ""Performance Objective Settings""
+Langkah 6: Isi detail dari Objective
+Langkah 7: Klik ""SAVE"""
+Bagaimana cara mengubah/mengupdate objective?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih ""Performance"" pada drop down menu
+Langkah 3: Pilih form
+Langkah 4: Scroll hingga section ""Performance Objective Settings""
+Langkah 5: Klik icon pensil pada Objective yang ingin diubah
+Langkah 6: Ubah detail dari Objective
+Langkah 7: Klik ""Save Changes""
+
+Via Mobile
+Langkah 1: Akses aplikasi SuccessFactors
+Langkah 2: Pada section ""To-Do"", klik ""Performance Reviews""
+Langkah 3: Pilih form (opsional)
+Langkah 4: Pilih objective yang ingin diubah pada section ""Performance Objective Settings""
+Langkah 5: Klik ""MORE DETAILS""
+Langkah 6: Klik icon three dots di pojok kanan atas
+Langkah 7: Pilih ""Edit Goal""
+Langkah 8: Ubah detail dari Objective
+Langkah 9: Klik ""SAVE"""
+Bagaimana cara mengubah/mengupdate objective untuk bawahan?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih ""Performance"" pada drop down menu
+Langkah 3: Pilih form bawahan
+Langkah 4: Scroll hingga section ""Performance Objective Settings""
+Langkah 5: Klik icon pensil pada Objective yang ingin diubah
+Langkah 6: Ubah detail dari Objective
+Langkah 7: Klik ""Save Changes""
+
+Via Mobile
+Langkah 1: Akses aplikasi SuccessFactors
+Langkah 2: Pada section ""To-Do"", klik ""Performance Reviews""
+Langkah 3: Pilih form bawahan
+Langkah 4: Pilih objective yang ingin diubah pada section ""Performance Objective Settings""
+Langkah 5: Klik ""MORE DETAILS""
+Langkah 6: Klik icon three dots di pojok kanan atas
+Langkah 7: Pilih ""Edit Goal""
+Langkah 8: Ubah detail dari Objective
+Langkah 9: Klik ""SAVE"""
+Bagaimana cara menghapus objective pada tahap objective setting?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih ""Performance"" pada drop down menu
+Langkah 3: Pilih form
+Langkah 4: Scroll hingga section ""Performance Objective Settings""
+Langkah 5: Klik icon tempat sampah pada Objective yang ingin dihapus
+Langkah 6: Klik ""OK""
+
+Via Mobile
+Langkah 1: Akses aplikasi SuccessFactors
+Langkah 2: Pada section ""To-Do"", klik ""Performance Reviews""
+Langkah 3: Pilih objective yang ingin dihapus pada section ""Performance Objective Settings""
+Langkah 4: Klik ""MORE DETAILS""
+Langkah 5: Klik icon three dots di pojok kanan atas
+Langkah 6: Pilih ""Delete Goal""
+Langkah 7: Pilih ""Yes"""
+Bagaimana cara menghapus objective untuk bawahan pada tahap objective setting?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih ""Performance"" pada drop down menu
+Langkah 3: Pilih form bawahan
+Langkah 4: Scroll hingga section ""Performance Objective Settings""
+Langkah 5: Klik icon tempat sampah pada Objective yang ingin dihapus
+Langkah 6: Klik ""OK""
+
+Via Mobile
+Langkah 1: Akses aplikasi SuccessFactors
+Langkah 2: Pada section ""To-Do"", klik ""Performance Reviews""
+Langkah 3: Pilih form bawahan
+Langkah 4: Pilih objective yang ingin dihapus pada section ""Performance Objective Settings""
+Langkah 5: Klik ""MORE DETAILS""
+Langkah 6: Klik icon three dots di pojok kanan atas
+Langkah 7: Pilih ""Delete Goal""
+Langkah 8: Pilih ""Yes"""
+Bagaimana cara membuat achievement/piala?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih ""Continuous Performance"" pada drop down menu
+Langkah 3: Klik button ""Create Activity""
+Langkah 4: Isi detail Activity
+Langkah 5: Pada Status, pilih ""Completed""
+Langkah 6: Tick ""Mark as achievement""
+Langkah 7: Isi tanggal
+Langkah 8: Pilih Objective yang ingin dihubungkan pada ""Performance Objective""
+Langkah 9: Klik button ""Save""
+Langkah 10: Klik ""Add Another"" untuk menambahkan, klik ""Close"" untuk kembali
+
+Via Mobile
+Langkah 1: Akses aplikasi SuccessFactors
+Langkah 2: Klik icon 3 garis pada pojok kiri atas
+Langkah 3: Pilih ""My Activities""
+Langkah 4: Klik icon plus
+Langkah 5: Isi detail Activity
+Langkah 6: Pada Status, pilih ""Completed""
+Langkah 7: Tick ""Mark as achievement""
+Langkah 8: Isi tanggal pencapaian
+Langkah 9: Pilih Objective yang ingin dihubungkan pada ""Performance Objective""
+Langkah 10: Klik ""SAVE"""
+Bagaimana cara mengubah/mengupdate achievement/piala?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih ""Continuous Performance"" pada drop down menu
+Langkah 3: Pilih Activity yang ingin diubah
+Langkah 4: Klik button ""Edit""
+Langkah 5: Ubah detail dari Activity
+Langkah 6: Klik button ""Save""
+Langkah 7: Klik button ""OK""
+
+Via Mobile
+Langkah 1: Akses aplikasi SuccessFactors
+Langkah 2: Klik icon 3 garis pada pojok kiri atas
+Langkah 3: Pilih ""My Activities""
+Langkah 4: Pilih Activity yang ingin diubah
+Langkah 5: Pilih detail yang akan diubah
+Langkah 6: Ubah sesuai kebutuhan
+Langkah 7: Klik icon panah kiri jika sudah selesai"
+Bagaimana cara menghapus achievement/piala?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih ""Continuous Performance"" pada drop down menu
+Langkah 3: Pilih Activity yang ingin dihapus
+Langkah 4: Klik button ""Delete""
+Langkah 5: Klik button ""Delete"" untuk konfirmasi
+
+Via Mobile
+Langkah 1: Akses aplikasi SuccessFactors
+Langkah 2: Klik icon 3 garis pada pojok kiri atas
+Langkah 3: Pilih ""My Activities""
+Langkah 4: Pilih Activity yang ingin dihapus
+Langkah 5: Klik icon three dots di pojok kanan atas
+Langkah 6: Pilih ""Delete Activity""
+Langkah 7: Klik ""Delete"" untuk konfirmasi"
+Bagaimana cara membuat development?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih ""Performance"" pada drop down menu
+Langkah 3: Pilih form
+Langkah 4: Scroll hingga section ""Individual Development Plan""
+Langkah 5: Klik ""+Add Objective""
+Langkah 6: Isi detail dari Development
+Langkah 7: Klik ""Save Changes""
+
+Via Mobile
+Langkah 1: Akses aplikasi SuccessFactors
+Langkah 2: Pada section ""To-Do"", klik ""Performance Reviews""
+Langkah 3: Klik icon Plus
+Langkah 4: Pilih ""Individual Development Plan""
+Langkah 5: Isi detail dari Development
+Langkah 6: Klik ""SAVE"""
+Bagaimana cara membuat development untuk bawahan?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih ""Performance"" pada drop down menu
+Langkah 3: Pilih form bawahan
+Langkah 4: Scroll hingga section ""Individual Development Plan""
+Langkah 5: Klik ""+Add Objective""
+Langkah 6: Isi detail dari Development
+Langkah 7: Klik ""Save Changes""
+
+Via Mobile
+Langkah 1: Akses aplikasi SuccessFactors
+Langkah 2: Pada section ""To-Do"", klik ""Performance Reviews""
+Langkah 3: Pilih form bawahan
+Langkah 4: Klik icon Plus
+Langkah 5: Pilih ""Individual Development Plan""
+Langkah 6: Isi detail dari Development
+Langkah 7: Klik ""SAVE"""
+Bagaimana cara mengubah/mengupdate development?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih ""Performance"" pada drop down menu
+Langkah 3: Pilih form
+Langkah 4: Scroll hingga section ""Individual Development Plan""
+Langkah 5: Klik icon pensil pada Objective yang ingin diubah
+Langkah 6: Ubah detail dari Development
+Langkah 7: Klik ""Save Changes""
+
+Via Mobile
+Langkah 1: Akses aplikasi SuccessFactors
+Langkah 2: Pada section ""To-Do"", klik ""Performance Reviews""
+Langkah 3: Pilih Development yang ingin diubah pada section ""Individual Development Plan""
+Langkah 4: Klik ""MORE DETAILS""
+Langkah 5: Klik icon three dots di pojok kanan atas
+Langkah 6: Pilih ""Edit Goal""
+Langkah 7: Ubah detail dari Objective
+Langkah 8: Klik ""SAVE"""
+Bagaimana cara mengubah/mengupdate development untuk bawahan?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih ""Performance"" pada drop down menu
+Langkah 3: Pilih form bawahan
+Langkah 4: Scroll hingga section ""Individual Development Plan""
+Langkah 5: Klik icon pensil pada Development yang ingin diubah
+Langkah 6: Ubah detail dari Development
+Langkah 7: Klik ""Save Changes""
+
+Via Mobile
+Langkah 1: Akses aplikasi SuccessFactors
+Langkah 2: Pada section ""To-Do"", klik ""Performance Reviews""
+Langkah 3: Pilih form bawahan
+Langkah 4: Pilih objective yang ingin diubah pada section ""Individual Development Plan""
+Langkah 5: Klik ""MORE DETAILS""
+Langkah 6: Klik icon three dots di pojok kanan atas
+Langkah 7: Pilih ""Edit Goal""
+Langkah 8: Ubah detail dari Development
+Langkah 9: Klik ""SAVE"""
+Bagaimana cara menghapus development?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih ""Performance"" pada drop down menu
+Langkah 3: Pilih form
+Langkah 4: Scroll hingga section ""Individual Development Plan""
+Langkah 5: Klik icon tempat sampah pada Development yang ingin dihapus
+Langkah 6: Klik ""OK""
+
+Via Mobile
+Langkah 1: Akses aplikasi SuccessFactors
+Langkah 2: Pada section ""To-Do"", klik ""Performance Reviews""
+Langkah 3: Pilih Development yang ingin dihapus pada section ""Individual Development Plan""
+Langkah 4: Klik ""MORE DETAILS""
+Langkah 5: Klik icon three dots di pojok kanan atas
+Langkah 6: Pilih ""Delete Goal""
+Langkah 7: Pilih ""Yes"""
+Bagaimana cara menghapus development untuk bawahan?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih ""Performance"" pada drop down menu
+Langkah 3: Pilih form bawahan
+Langkah 4: Scroll hingga section ""Individual Development Plan""
+Langkah 5: Klik icon tempat sampah pada Development yang ingin dihapus
+Langkah 6: Klik ""OK""
+
+Via Mobile
+Langkah 1: Akses aplikasi SuccessFactors
+Langkah 2: Pada section ""To-Do"", klik ""Performance Reviews""
+Langkah 3: Pilih form bawahan
+Langkah 4: Pilih Development yang ingin dihapus pada section ""Individual Development Plan""
+Langkah 5: Klik ""MORE DETAILS""
+Langkah 6: Klik icon three dots di pojok kanan atas
+Langkah 7: Pilih ""Delete Goal""
+Langkah 8: Pilih ""Yes"""
+Bagaimana cara membuat travel request?	"Via Web/Desktop
+Langkah 1: Buka halaman discovery.amman.co.idlalu pilih employee-resources.
+Langkah 2: Pilih SAP Fiori, kemudian Log In.
+Langkah 3: Setelah berhasil login, pilih tile Travel Employee kemudian klik pada kotak My Travel Requests V2
+Langkah 4: Klik tanda (+) untuk pengajuan diri sendiri. 
+Langkah 5: Untuk Travel Requestor, pilih karyawan yang akan dibuatkan, klik ikon pada kolom Employee Name, pilih employee lalu klik ""Go""
+Langkah 6: Isi semua data pada tab Details.
+Langkah 7: Jika ingin memasukkan itinerary perjalanan, isi data pada tab Additional Destination. Klik tanda (+).
+Langkah 8: Jika hendak mengajukan permohonan advance/ uang muka, isi tab Estimated Costs dan tab Advances untuk semua biaya yang sudah di-estimasikan.
+Langkah 9: Isi data travel service untuk isi data akomodasi dan transportasi. Klik tanda (+).
+Langkah 10: Klik ""Save"" untuk menyimpan request dan melampirkan dokumen
+Langkah 11: Jika ingin melampirkan dokumen klik ikon kertas pada kolom attachment, pilih Document Type–AMMAN Travel Document, cari fileyang ingin dilampirkan (.pdf) dan masukkan deskripsi (bila dibutuhkan), kemudian klik Upload.
+Langkah 12: Klik ""Save & Submit"" untuk menyelesaikan travel request dan workflow akan berjalan.
+
+Permintaan travel request telah berhasil dibuat."
+Bagaimana cara membuat travel expense request?	"Via Web/Desktop
+Langkah 1: Buka halaman discovery.amman.co.idlalu pilih employee-resources.
+Langkah 2: Pilih SAP Fiori, kemudian Log In.
+Langkah 3: Setelah berhasil login, pilih tile Travel Employee kemudian klik pada kotak My Travel and Expense V2
+Langkah 4: Klik tanda (+) untuk pengajuan diri sendiri. 
+Langkah 5: Untuk Travel Requestor, pilih karyawan yang akan dibuatkan, klik ikon pada kolom Employee Name, pilih employee lalu klik ""Go""
+Langkah 6: Klik ikon pada Trip Schema untuk Domestic atau International
+Langkah 7: Klik ikon pada Available Travel Requests/Plan, untuk memilih travel request yang ingin di expense
+Langkah 8: Klik ""Create Expense Report""
+Langkah 9: Untuk bagian Details, Cost Assignment, Advances, Comments dan Attachments akan 
+terisi dengan data yang sama seperti di Travel Request
+Langkah 10: Untuk memasukkan biaya yang akan diklaim, klik tanda (+) pada bagian Receipts
+Langkah 11: Klik pada kotak di sebelah kiri dari tipe biaya yang dipilih kemudian klik Submit
+Langkah 12: Klik ikon panah pada tipe biaya untuk memasukkan detil dari tipe biaya tersebut.
+Langkah 13: Isi semua detail expense dan lampirannya.
+Langkah 14: Klik ""Save & Submit"" untuk menyelesaikan travel expense
+Langkah 15: Tick pada kolom pernayataan konfirmasi untuk memastikan total expense, lalu klik ""Submit"".
+
+Permintaan travel expense telah berhasil dibuat."
+Bagaimana cara menyetujui/menolak travel request?	"Via Web/Desktop
+Langkah 1: Buka halaman discovery.amman.co.idlalu pilih employee-resources.
+Langkah 2: Pilih SAP Fiori, kemudian Log In.
+Langkah 3: Setelah berhasil login, pilih tile Travel Approval, lalu klik My Inbox.
+Langkah 4: Pilih request yang akan di Setujui atau Tolak
+Langkah 5: Klik ikon untuk melampirkan lampiran travel
+Langkah 6: Klik ""Approve"" untuk memberikan persetujuan atau ""Reject"" untuk menolak permintaan
+Langkah 7: Pada saat menolak permintaan, maka approver harus memasukkan alasan menolak permintaan tersebut
+
+Travel akan menghilang dari inbox dan akan berlanjut prosesnya"
+Bagaimana cara menyetujui/menolak travel expense request?	"Via Web/Desktop
+Langkah 1: Buka halaman discovery.amman.co.idlalu pilih employee-resources.
+Langkah 2: Pilih SAP Fiori, kemudian Log In.
+Langkah 3: Setelah berhasil login, pilih tile Travel Approval, lalu klik My Inbox.
+Langkah 4: Pilih request yang akan di Setujui atau Tolak
+Langkah 5: Klik ikon untuk melampirkan lampiran travel
+Langkah 6: Klik ""Approve"" untuk memberikan persetujuan atau ""Reject"" untuk menolak permintaan
+Langkah 7: Pada saat menolak permintaan, maka approver harus memasukkan alasan menolak permintaan tersebut
+
+Travel akan menghilang dari inbox dan akan berlanjut prosesnya"
+Bagaimana cara melakukan print standard job pada MO?	"Langkah 1 : Masuk T-Code ZPM_PRINT_MO_FORM
+Langkah 2 : Input Plant yang sesuai
+Langkah 3 : Input nomor Maintenance Order yang akan dilakukan print standard Job
+Langkah 4 : Pada section Document Selection check field ""STJ - Standard Job"""
+Bagaimana cara melakukan settlement invoice consignment?	"Langkah 1 : input tcode ZMRKO
+Langkah 2 : Pilih variant Consignment 
+Langkah 3 : Sesuaikan Vendor dan periode usage
+Langkah 4 : Reconsile total amount pada report ZMRKO dengan total amount pada Invoice 
+Langkah 5 : Update data tax dan data invoice menggunakan tcode FB02"
+Bagaimana cara melakukan load invoice VHS trakindo-mcmahon?	"Langkah 1 : reconsile detail total invoice dari vendor dengan tcode MB51
+Langkah 2 : buat data invoice sesuai templete upload  
+Langkah 3 : masukan tcode ZFI_UPL_POINV lalu pilih file templete upload
+"
+Bagaimana cara menghapus Project yang sudah memiliki budget?	"Langkah 1 : Buka t-code CJ30 untuk menghapus budget
+Langkah 2 : Buka t-code OPSX untuk reset budget 
+Langkah 3 : Buka t-code CJ02 untuk menghapus Project 
+Langkah 4 : Klik Edit>> Object>> Delete
+Langkah 5 : Klik Save"
+Bagaimana cara mengecek GL Account pada Rebuild Order?	"Langkah 1 : Buka t-code IW49
+Langkah 2 : Klik variant RO-EXT
+Langkah 3 : Execute"
+Bagaimana cara melakukan settlement WBS untuk lebih dari satu Asset?	"Langkah 1 : Buka t-code CJ02 untuk maintain settlement rule
+Langkah 2 : Masukan WBS Element 
+Langkah 3 : Klik settlement rule
+Langkah 4 : Masukan category FXA dan settlement receiver asset yang diinginkan 
+Langkah 5 : Masukan percentase / amount untuk setiap asset 
+Langkah 6 : Save"
+Bagaimana cara melakukan load invoice untuk one time vendor?	"Langkah 1 : Masukan tcode fv60 
+Langkah 2 : pilih vendor number ""OTV""
+Langkah 3 : mengisi data detail vendor 
+Langkah 4 : Mengisi data Bank detail
+Langkah 5 : Mengisi data-data Invoice 
+Langkah 6 : Simulate Journal "
+Bagaimana cara menginput Low Value Asset?	"Langkah 1 : Buka t-code AS01 dan buat asset master data dengan asset class 301
+Langkah 2 : Input acquisition value dalam IDR dengan t-code AB01L & offsetting account 1207989999 - LOW-VALUE ASSETS CLEARING ACCOUNT
+Langkah 3 : Journal ke account yang sesuai denagn t-code FB01L untuk specific ledger"
+Bagaimana cara load invoice service melalui MIR7/ MIRO?	"Langkah 1 : Buka tcode MIR7
+Langkah 2 : isi data-data invoice dan masukan PO service
+Langkah 3 : Pastikan accounting document type = RF
+Langkah 4 : Pastikan Payment Block = P
+Langkah 5 : Simulate Journal dan Park Document 
+Langkah 6 : buka document yang sudah ter-park kemudian tambahkan document attachment  
+"
+Bagaimana cara menghapus Cost Center?	"Langkah 1 : Buka t-code KS04
+Langkah 2 : Masukkan Cost Center yang akan di delete 
+Langkah 3 : Execute dengan tombol test run ter-centang 
+Langkah 4 : Jika sudah sesuai, Execute dengan tombol test run tidak ter-centang
+Langkah 5 : Cost Center berhasil dihapus"
+Bagaimana cara resolved business rule "Tax Amount Miss Match"?	"Langkah 1 : Simulate Business rules pada VIM Document ID
+Langkah 2 : buka detail error message pada business rules 
+Langkah 3 : pada tab Tax pastikan data Tax amount dari faktur Pajak sudah Sesuai
+Langkah 4 : bandingkan data-data Faktur Pajak pada invoice dengan data Faktur Pajak DJP
+Langkah 5 : buka tcode ZFI_TAX_VIEW_UPL untuk melihat data-data Faktur Pajak dari DJP"
+Bagaimana cara maintain Exchange rate untuk currency asing?	"Langkah 1 : Buka tcode OB08
+Langkah 2 : Masukan currency type yang ingin di maintain 
+Langkah 3 : Masukan kode Kurs yang akan di maintain 
+Langkah 4 : Masukan nilai rate yang akan di maintain
+Langkah 5 : Masukan periode berlaku exchange rate
+Langkah 6 : Klik Tombol Save"
+Bagaimana cara maintain exchange rate untuk currency asing secara masal?	"Langkah 1 : buka tcode TBEX
+Langkah 2 : pilih radio button direct quotation
+Langkah 3 : klik tombol Create
+Langkah 4 : input data yang ingin di upload
+Langkah 5 : Klik Tombol Save"
+Bagaimana cara melihat history perubahan data pada invoice?	"Langkah 1 : Buka Tcode FB03
+Langkah 2 : input nomor document, fiscal year, comp code 
+Langkah 3 : pilih line item yang ingin di lihat history perubahan nya 
+Langkah 4 : klik menu environment kemudian pilih menu Document Changes "
+Bagaimana cara melakukan training document pada Opentext? 	"Langkah 1 : Buka applikasi remote desktop Client 
+Langkah 2 : connect ke server 10.10.52.9
+Langkah 3 : Masukan user ID dan Password 
+Langkah 4 : Buka kembali applikasi remote dekstop client pada computer server 
+Langkah 5 : Connect ke BCC server 10.10.52.11
+Langkah 6 : buka Applikasi BCC customizing client 
+Langkah 7 : Pilih menu import document for training
+"
+Bagaimana cara memberi tanda untuk invoice yang perlu dilakukan training di Opentext?	"Langkah 1 : Buka Applikasi Validtion Client 
+Langkah 2 : Pilih server Production
+Langkah 3 : masukan User ID SAP dan password
+Langkah 4 : Klik tombol ""mark For training"" pada PDF
+Langkah 5 : Klik tombol Submit "
+Bagaimana cara melakukan monitoring status document invoice yang di scan melalui Opentext?	"Langkah 1 : Buka tcode /N/OTX/PF03_WP
+Langkah 2 : pilih menu inbound administration
+Langkah 3 : filter channel id = ZICC_Mail
+Langkah 4 : pilih register ID yang ingin di check 
+Langkah 5 : check Tab History "
+Bagaimana merubah WHT untuk Invoice yang sudah ter-posting?	"Langkah 1 : buka tcode FB02 
+Langkah 2 : masukan nomor Document, Fiscal Year, dan Company Code
+Langkah 3 : double klik pada line item Vendor
+Langkah 4 : klik Menu withholding Tax 
+Langkah 5 : masukan WHT code dan WHT amount 
+Langkah 6 : Klik tombol save"
+Bagaimana cara melihat Payment yang harus dilakukan pelaporan  Tax Import ke system SIMODIS?	"Langkah 1 : Buka Tcode ZFI_SIMODIS_RPT
+Langkah 2 : masukan tanggal pembaryaran PIB 
+Langkah 3 : masukan tanggal pembayaran invoice barang 
+Langkah 4 : Klik tombol Execute 
+Langkah 5 : download report menjadi file excel dengan format yang sudah di tentukan "
+Bagaimana cara post invoice melalui VIM?	"Langkah 1 : buka tcode /N/OPT/VIM_WP
+Langkah 2 : pilih menu my inbox 
+Langkah 3 : Execute vim document ID yang ingin di posting
+Langkah 4 : klik tombol Simulate Rules
+Langkah 5 : Perbaiki Business rules yang masih merah/error
+Langkah 6 : Klik Tombol Apply rules setelah melakukan perbaikan data 
+Langkah 7 : Refer VIM document ID untuk di review oleh AP supervisor "
+Bagaimana cara load invoice yang sudah ada pembayaran Down payment sebelumnya?	"Langkah 1 : buka tcode /N/OPT/VIM_WP
+Langkah 2 : Pilih document ID yang ingin di proses
+Langkah 3 : Klik tombol MIR4
+Langkah 4 : input down payment clering amount sesuai nilai pengurang invoice yang sudah dibayarkan
+Langkah 5 : Simulate Journal 
+Langkah 6 : Park/Post Document "
+Bagaimana cara membuat invoice melalui opentex VIM?	"Langkah 1 : Buka tcode /N/OPT/VIM_WP
+Langkah 2 : klik tombol scan
+Langkah 3 : Drag n Drop file PDF yang ingin di scan 
+Langkah 4 : buka Applikasi Validation client 
+Langkah 5 : validasi document PDF yang di scan 
+Langkah 6 : Klik Tombol Submit "
+Bagaimana cara scan invoice menggunakan applikasi enterprise scan?	"Langkah 1 : Buka Applikasi enterprise scan 
+Langkah 2 : arahkan folder directory ke tempat PDF yang akan di scan 
+Langkah 3 : Klik Tombol Scan 
+Langkah 4 : atur urutan document yang di scan dan delete halaman yang tidak di perlukan
+Langkah 5 : buka SAP GUI dan input tcode /N/OPT/VIM_WP
+Langkah 6 : klik tombol Scan kemudian klik tombol Archived "
+Bagaimana cara lock Internal Order?	"Langkah 1 : Buka t-code KO02
+Langkah 2 : Klik Edit >> Lock >> Set
+Langkah 3 : Klik Save"
+Bagaimana cara unlock Internal Order?	"Langkah 1 : Buka t-code KO02
+Langkah 2 : Klik Edit >> Lock >> Undo
+Langkah 3 : Klik Save"
+Bagaimana cara melihat report approval travel expense dan request karyawan?	"Via SAP GUI
+Langkah 1: Login ke SAP S/4 HANA melalui SAP GUI.
+Langkah 3: Masukan Tcode ZHCTV_TRAVEL_STATUS pada command field di pojok kiri atas.
+Langkah 4: Masukan parameter yang ada di selection screen untuk menampilkan trip yang ingin dilihat.
+Langkah 5: Klik ikon ""execute"" gambar jam da checklist untuk menampilkan report secara keselururhan.
+Langkah 6: Klik ""view"" di setiap trip number untuk melihat detail approver yang sudah dan akan menyetujui trip
+
+Report table akan muncul dan dapat di download"
+Bagaimana mengajukan permintaan time off/cuti?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih menu ""Time Off"" pada section ""My Info""
+Langkah 3: Klik tombol ""Create Absence"" pada sisi kanan bawah
+Langkah 4: Pilih jenis cuti yang diinginkan pada ""Leave Type""
+Langkah 5: Pilih tanggal cuti yang ingin diambil pada ""Start Date"" dan ""End Date""
+Langkah 6: Tambahkan komentar pada kolom ""Comment"" jika diperlukan
+Langkah 7: Masukkan alamat Anda pada ""Leave Address""
+Langkah 8: Tambahkan lampiran pada jika diperlukan
+Langkah 7: Klik ""Submit""
+
+Permintaan cuti telah berhasil diajukan."
+Bagaimana mengubah permintaan time off/cuti?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih menu ""Time Off"" pada section ""My Info""
+Langkah 3: Klik nama jenis cuti pada Calendar
+Langkah 4: Klik ""Edit Absence""
+Langkah 5: Perbarui informasi yang ingin diubah
+Langkah 6: Klik ""Submit""
+
+Permintaan cuti telah berhasil diubah."
+Bagaimana membatalkan permintaan time off/cuti?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih menu ""Time Off"" pada section ""My Info""
+Langkah 3: Klik nama jenis cuti pada Calendar
+Langkah 4: Klik ""Edit Absence""
+Langkah 5: Klik ""Cancel Absence""
+Langkah 6: Klik ""Yes""
+
+Permintaan cuti telah berhasil dibatalkan."
+Bagaimana melihat permintaan time off/cuti yang sudah dibuat?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih menu ""Time Off"" pada section ""My Info""
+Langkah 3: Pada kalender, klik pop-up yang muncul terkait cuti yang diajukan
+Langkah 4: Masuk ke bagian ""Upcoming Time Off"" dan pilih pengajuan time off/cuti yang ingin dilihat
+Langkah 5: Klik ""Show in Calendar""
+
+Karyawan dapat melihat detail dari permintaan cuti."
+Bagaimana memeriksa remaining balance/saldo yang tersisa untuk jenis cuti yang tersedia?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih menu ""Time Off"" pada section ""My Info""
+Langkah 3: Pada bagian ""Balances"", klik ""Show all""
+
+Saldo cuti berhasil ditampilkan."
+Bagaimana menyetujui permintaan time off/cuti?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pada section ""To-Do"", klik menu "" Approve Request""
+Langkah 3: Klik permintaan cuti
+Langkah 4: Klik ""Approve"" untuk menyetujui permintaan cuti
+
+Permintaan cuti telah berhasil disetujui."
+Bagaimana menolak permintaan time off/cuti?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pada section ""To-Do"", klik menu "" Approve Request""
+Langkah 3: Klik permintaan cuti
+Langkah 4: Klik ""Decline"" untuk menolak permintaan cuti
+
+Permintaan cuti telah berhasil ditolak."
+Bagaimana mendelegasikan persetujuan atas permintaan time off/cuti?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pada section ""To-Do"", klik menu "" Approve Request""
+Langkah 3: Klik permintaan cuti
+Langkah 4: Klik ""Delegate"" untuk mendelegasikan permintaan cuti
+Langkah 5: Masukkan nama approver yang baru
+Langkah 6: Klik ""Send""
+
+Persetujuan alur kerja akan dialihkan ke approver baru yang dipilih."
+Bagaimana melihat dan mereview absensi tim?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pada section ""My Team"", klik menu "" Team Absences""
+
+Manajer dapat melihat ketidakhadiran dalam tim."
+Bagaimana cara mengajukan time off/cuti atas nama karyawan?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Cari nama karyawan yang akan diajukan time off/cuti
+Langkah 3: Pilih ""Time Off"", lalu pilih ""Administer Time""
+Langkah 4: Masuk ke tab ""Absences"", klik ""Create Absence""
+Langkah 5: Pilih Leave type yang sesuai, dan isi informasi yang diperlukan
+Langkah 6: Klik ""Submit""
+
+Permintaan cuti telah berhasil dikirimkan atas nama karyawan."
+Bagaimana cara mengajukan leave of absence untuk karyawan?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Cari nama karyawan yang akan diajukan time off/cuti
+Langkah 3: Pilih ""Time Off"", lalu pilih ""Administer Time""
+Langkah 4: Masuk ke tab ""Absences"", klik ""Create Absence""
+Langkah 5: Pilih ""Long Leave"" pada kolom leave type, dan isi informasi yang diperlukan
+Langkah 6: Klik ""Submit""
+
+Permintaan leave of absence (LOA) telah berhasil dikirimkan untuk karyawan."
+Bagaimana langkah berikutnya setelah menerima welcome email?	"Via Web/Desktop
+Langkah 1: Buka welcome email
+Langkah 2: Klik ""Set Password Here""
+Langkah 3: Masukkan password yang diinginkan
+Langkah 4: Klik ""Submit""
+
+Password berhasil dibentuk oleh pengguna."
+Bagaimana cara mengubah data pribadi di Successfactor?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pada section ""My Info"", klik menu ""My Profile""
+Langkah 3: Masuk ke section Personal Information dan klik icon pensil
+Langkah 4: Masukkan perubahan data yang diinginkan
+Langkah 5: Klik ""Save""
+Langkah 6: Klik ""Confirm""
+
+Permohonan perubahan data pribadi telah berhasil dikirim."
+Bagaimana cara mengubah informasi alamat di Successfactor?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pada section ""My Info"", klik menu ""My Profile""
+Langkah 3: Masuk ke section Address Information dan klik icon pensil
+Langkah 4: Masukkan perubahan data yang diinginkan
+Langkah 5: Klik ""Save""
+Langkah 6: Klik ""Confirm""
+
+Permohonan perubahan informasi alamat telah berhasil dikirim."
+Bagaimana cara mengubah informasi pembayaran dan rekening bank di Successfactor?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pada section ""My Info"", klik menu ""My Profile""
+Langkah 3: Masuk ke section Payment Information dan klik icon pensil
+Langkah 4: Klik tombol ""add"" dan isi kolom yang diperlukan
+Langkah 5: Klik ""Save""
+Langkah 6: Klik ""Confirm""
+
+Permohonan perubahan payment information telah berhasil dikirim."
+Bagaimana cara membuat permohonan Camp In untuk karyawan di Successfactor?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pada section ""My Info"", klik menu ""My Profile""
+Langkah 3: Masuk ke section Camp In Request dan klik icon pensil
+Langkah 4: isi kolom Camp In
+Langkah 5: Klik ""Save""
+Langkah 6: Klik ""Confirm""
+
+Permohonan camp in telah berhasil dikirim."
+Bagaimana cara membuat permohonan Camp Out untuk karyawan di Successfactor?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pada section ""My Info"", klik menu ""My Profile""
+Langkah 3: Masuk ke section Camp Out Request dan klik icon pensil
+Langkah 4: isi kolom Camp Out
+Langkah 5: Klik ""Save""
+Langkah 6: Klik ""Confirm""
+
+Permohonan camp out telah berhasil dikirim."
+Bagaimana cara mengubah tanggungan (dependents) karyawan di Successfactor?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pada section ""My Info"", klik menu ""My Profile""
+Langkah 3: Masuk ke section Dependents dan klik icon pensil
+Langkah 4: Perbarui data pada kolom yang diperlukan
+Langkah 5: Klik ""Save""
+Langkah 6: Klik ""Confirm""
+
+Permohonan perubahan data tanggungan (dependents) telah berhasil dikirim."
+Bagaimana cara membuat medical reimbursement - general claim karyawan di Successfactor?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih menu ""Home"", lalu pilih ""My Employee File"" pada dropdown menu
+Langkah 3: Pilih tab ""Benefits"", lalu klik ""Go to Benefits""
+Langkah 4: Pada bagian ""Medical Reimbursement"", klik ""Start a Claim""
+Langkah 5: Pada kolom ""Medical Claim Type"", pilih ""General Claim""
+Langkah 6: Masukkan total claim amount dan receipt date
+Langkah 7: Pada bagian attachment, klik ""Upload"" untuk mengunggah lampiran yang diperlukan
+Langkah 8: Pada bagian ""Comment/Remarks"", isi komentar jika diperlukan
+Langkah 9: Klik ""Save""
+Langkah 10: Klik ""Confirm""
+
+Medical reimbursement - general claim berhasil di claim dan dapat dilihat pada bagian in-process claims."
+Bagaimana cara membuat medical reimbursement - maternity claim karyawan di Successfactor?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih menu ""Home"", lalu pilih ""My Employee File"" pada dropdown menu
+Langkah 3: Pilih tab ""Benefits"", lalu klik ""Go to Benefits""
+Langkah 4: Pada bagian ""Medical Reimbursement"", klik ""Start a Claim""
+Langkah 5: Pada kolom ""Medical Claim Type"", pilih ""Maternity Claim""
+Langkah 6: Masukkan total claim amount dan receipt date
+Langkah 7: Pada bagian attachment, klik ""Upload"" untuk mengunggah lampiran yang diperlukan
+Langkah 8: Pada bagian ""Comment/Remarks"", isi komentar jika diperlukan
+Langkah 9: Klik ""Save""
+Langkah 10: Klik ""Confirm""
+
+Medical reimbursement - maternity claim berhasil di claim dan dapat dilihat pada bagian in-process claims."
+Bagaimana cara membuat medical reimbursement - eyeglasses claim / klaim kacamata karyawan di Successfactor?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih menu ""Home"", lalu pilih ""My Employee File"" pada dropdown menu
+Langkah 3: Pilih tab ""Benefits"", lalu klik ""Go to Benefits""
+Langkah 4: Pada bagian ""Medical Reimbursement"", klik ""Start a Claim""
+Langkah 5: Pada kolom ""Medical Claim Type"", pilih ""Eyeglasses Claim""
+Langkah 6: Masukkan total claim amount dan receipt date
+Langkah 7: Pada bagian attachment, klik ""Upload"" untuk mengunggah lampiran yang diperlukan
+Langkah 8: Pada bagian ""Comment/Remarks"", isi komentar jika diperlukan
+Langkah 9: Klik ""Save""
+Langkah 10: Klik ""Confirm""
+
+Medical reimbursement - eyeglasses claim berhasil di claim dan dapat dilihat pada bagian in-process claims."
+Bagaimana cara membuat field break land transportation reimbursement karyawan di Successfactor?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih menu ""Home"", lalu pilih ""My Employee File"" pada dropdown menu
+Langkah 3: Pilih tab ""Benefits"", lalu klik ""Go to Benefits""
+Langkah 4: Pada bagian ""Field Break Land Transportation Reimbursement"", klik ""Start a Claim""
+Langkah 5: Masukkan receipt date sesuai tanggal kwitansi, dan masukkan Claim Amount
+Langkah 6: Pada bagian attachment, klik ""Upload"" untuk mengunggah lampiran yang diperlukan
+Langkah 7:  Pada bagian ""Comment/Remarks"", isi komentar jika diperlukan
+Langkah 8: Klik ""Save""
+Langkah 9: Klik ""Confirm""
+
+Field land transportation reimbursement berhasil di claim dan dapat dilihat pada bagian in-process claims."
+Bagaimana cara membuat carry over reimbursement karyawan di Successfactor?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih menu ""Home"", lalu pilih ""My Employee File"" pada dropdown menu
+Langkah 3: Pilih tab ""Benefits"", lalu klik ""Go to Benefits""
+Langkah 4: Pada bagian ""Carry Over Medical Reimbursement"", klik ""Start a Claim""
+Langkah 5: Masukkan Total Claim Amount, dan masukkan Receipt Date sesuai yang tertera pada kwitansi
+Langkah 6: Pada bagian ""Comment/Remarks"", isi komentar jika diperlukan
+Langkah 7: Klik ""Save""
+Langkah 8: Klik ""Confirm""
+
+Carry over reimbursement berhasil di claim dan dapat dilihat pada bagian in-process claims."
+Bagaimana cara membuat annual leave transportation reimbursement karyawan di Successfactor?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih menu ""Home"", lalu pilih ""My Employee File"" pada dropdown menu
+Langkah 3: Pilih tab ""Benefits"", lalu klik ""Go to Benefits""
+Langkah 4: Pada bagian ""Annual Leave Transportation Reimbursement"", klik ""Start a Claim""
+Langkah 5: Masukkan Total Claim Amount, dan masukkan Receipt Date sesuai yang tertera pada kwitansi
+Langkah 6: Pada bagian attachment, klik ""Upload"" untuk mengunggah lampiran yang diperlukan
+Langkah 7:  Pada bagian ""Comment/Remarks"", isi komentar jika diperlukan
+Langkah 8: Klik ""Save""
+Langkah 9: Klik ""Confirm""
+
+Annual leave transportation reimbursement berhasil di claim dan dapat dilihat pada bagian in-process claims."
+Mengapa user id tidak bisa akses fiori?	"
+Langkah 1: Login ke SAP GUI 
+Langkah 2: Masukkan tcode SU53 pada kolom pojok kiri atas
+Langkah 3: Screenshot hasil dari transaksi dan error message pada layar fiori
+Langkah 4: Kirimkan hasil screenshot tersebut via email/chat pada ikon dibawah
+
+"
+Mengapa user id tidak bisa mencari karyawan saat mengajukan travel di fiori?	"
+Langkah 1: Login ke Fiori via portal Amman Discovery.
+Langkah 2: Masuk ke My travel expense/request
+Langkah 3: Screenshot hasil dari transaksi dan error message pada layar fiori
+Langkah 4: Kirimkan hasil screenshot tersebut via email/chat pada ikon dibawah
+
+"
+Bagaimana cara menampilkan form PMR?	"Via Web/Desktop
+Langkah 1: Login ke SuccessFactors via Portal Discovery
+Langkah 2: Pilih ""Performance"" pada drop down menu
+Langkah 3: Pilih form
+
+Via Mobile
+Langkah 1: Akses aplikasi SuccessFactors
+Langkah 2: Pada section ""To-Do"", klik ""Performance Reviews""
+Langkah 3: Pilih form (opsional)"
+Bagaimana cara membuat Cost Center Group?	"Langkah 1 : Buka t-code KSH2
+Langkah 2 : Pilih Cost Center Group yang mau diubah
+Langkah 3 : Klik Lower Level untuk membuat sub-group satu level dibawah
+Langkah 4 : Klik Same Level untuk membuat sub-group pada level yang sama
+Langkah 5 : Klik Cost Center untuk assign Cost Center yang sesuai 
+Langkah 6 : Save"
+Bagaimana cara membuat Internal Order Group	"Langkah 1 : Buka t-code KOH2
+Langkah 2 : Pilih Internal Order Group yang mau diubah
+Langkah 3 : Klik Lower Level untuk membuat sub-group satu level dibawah
+Langkah 4 : Klik Same Level untuk membuat sub-group pada level yang sama
+Langkah 5 : Klik Internal Order untuk assign Internal Order yang sesuai 
+Langkah 6 : Save"
+Bagaimana cara set planner profile?	"Langkah 1 : Buka t-code KP04
+Langkah 2 : Isi Planner Profile ZAMMN - CO Planning by All Planning Area untuk Amman
+Langkah 3 : Save"
+Bagaimana cara melihat Cost Center Planning?	"Langkah 1 : Buka t-code KP07
+Langkah 2 : Isi selection screen (Controlling Area, Version, Fiscal Year, Cost Center Group, Cost Element Group)
+Langkah 3 : Pilih Form based
+Langkah 4 : Klik Overview
+Langkah 5 : Klik Enable Macros jika terdapat pop-up screen
+Langkah 6 : Masukan angka planning dengan maksimal total field 9999
+Langkah 3 : Klik Save"
+Bagaimana cara melihat Internal Order Planning	"Langkah 1 : Buka t-code KPF7
+Langkah 2 : Isi selection screen (Controlling Area, Version, Fiscal Year, Order Group, Cost Element Group)
+Langkah 3 : Pilih Form based
+Langkah 4 : Klik Overview
+Langkah 5 : Klik Enable Macros jika terdapat pop-up screen
+Langkah 6 : Masukan angka planning dengan maksimal total field 9999
+Langkah 3 : Klik Save"
+Bagaimana cara mengubah Cost Element Group?	"Langkah 1 : Buka t-code KAH2
+Langkah 2 : Pilih Cost Element Group yang mau diubah
+Langkah 3 : Klik Lower Level untuk membuat sub-group satu level dibawah
+Langkah 4 : Klik Same Level untuk membuat sub-group pada level yang sama
+Langkah 5 : Klik Cost Element untuk assign GL Account yang sesuai 
+Langkah 6 : Save"
+Bagaimana cara memperbaiki apabila Reservation/MO VHS tidak generate PR dan PO?	"Langkah 1: Buka tcode ZMM_VRP_RPT
+Langkah 2: Input kode Plant dari Maintenance Order/Reservation
+Langkah 3: Input tanggal requirement atas Reservation atau Maintenance Order
+Langkah 4: Input nomor Maintenance Order atau Reservation yang tidak tergenerate PR dan PO nya
+*Copy data maintenance order/reservation, kemudian klik “upload from clipboard” untuk paste
+*Copy data maintenance order/reservation, kemudian klik “upload from clipboard” untuk paste
+Langkah 5: Klik Execute
+Langkah 6: Hasil report akan muncul, Message mengapa PR dan PO tidak terbentuk akan ada di pojok sebelah kanan
+Langkah 7: Jalankan instruksi sesuai dengan message yang ditampilkan di report VRP
+a. Info record for supplier XXXXXXXXXX and material YYYYYYYYYY does not exist
+Solusi: Maka hubungi tim Purchasing untuk cek dan membuat PIR dan Source List atas material dan supplier tersebut jika memang PIR & Source List ada yang belum terbuat
+b. Enter Valuation Price
+Maka hubungi tim Purchasing untuk cek validity tanggal PIR dan Source List, apakah tanggal Release date Reservation berada dalam range tanggal validity PIR & Source List
+c. Stock is Sufficient
+Solusi: maka hubungi tim Warehouse untuk cek stok ke MMBE, dan jika terdapat stock pada kolom Unrestrict. Use maka dapat di lakukan GI atas Reservasi tersebut
+d. Source of Supply Blocked (accourding to source list)
+Solusi: Maka hubungi tim Purchasing untuk cek atas material Reservation tersebut yang Source listnya di tick Blocked
+e. Could not find FPA No.
+Solusi: Maka hubungi tim Purchasing untuk cek tanggal validity PIR dan Source List atas material reservasi, dan update jika ada data yang kurang tepat
+f. Enter Purchasing Org
+Solusi: Maka hubungi tim Purchasing untuk cek dan membuat PIR dan Source List atas material dan supplier tersebut jika memang PIR & Source List ada yang belum terbuat
+g. Enter correct Reservation Number or leave it blank
+Solusi: Item atas Reservasi dihapus, harap input nomor Reservasi yang baru atau kosongkan nomor Reservasi pada selection screen report ZMM_VRP_RPT
+h. Enter Customer Data - Requesitioner
+Solusi: PR telah terbuat, mohon untuk cek PR yang terbentuk, telah sesuai datanya atau belum pada ME5N"
+Bagaimana cara memperbaiki jika tidak bisa mengirim GRN ke B2B Axis?	"Jika PO belum pernah terikirimkan ke Axis, mohon untuk mengikuti langkah dibawah ini:
+Langkah 1: IT AMMAN untuk cek table ZDB_M_B2B_PO untuk melihat apakah data yang terkirim ke B2B sama dengan item PO yang terdapat pada ME23N	
+Langkah 2: Jika data pada table ZDB_M_B2B_PO dan ME23N tidak sama, berarti PO dilakukan perubahan item PO namun perubahan tersebut belum dikirimkan ke B2B	
+Penyelesaian dapat dilakukan dengan langkah 3-8	
+Langkah 3: Cek apakah salah satu item PO telah full GR. Jika ada salah satu item sudah full GR, maka GR tersebut harus di cancel terlebih dahulu	
+Hubungi tim Warehouse untuk men-cancel GR tersebut	
+Langkah 4: Masuk ke Item PO, tab Confirmations
+Cek apakah tab Confirmations.
+Jika telah terisi maka hapuskan isian tab Confirmations:
+a. Order Ack.
+b. Kolom Quantity
+c. Tekan Enter
+d. Untick Acknowl.Reqd
+e. Conf.Control
+Langkah 5: Jika langkah-langkah 3 dan 4 telah dilakukan maka PO dapat dikirim ulang ke interface dengan tidak tick ""Reprocess""
+Langkah 6: Vendor mengirimkan PO Ack dari Axis ke SAP
+Langkah 7: Menginfokan tim warehouse untuk mem-post GR ulang atas item PO yang dicancel GR sebelumnya
+Langkah 8: Setelah di GR ulang, maka dapat melakukan send GR ke Axis
+ "
+Apakah perbedaan dari mencentang dan tidak mencentang Reprocess di ZMM_EDI_MMDOC untuk integrasi ke B2B AXIS?	"Tick Reprocess untuk mengirimkan data pengiriman sebelumnya ke Axis
+Untick Reprocess untuk mengirimkan perubahan data ke Axis saat ini"
+Bagaimana memperbaiki jika tidak bisa mengubah Plant di PO?	"Langkah 1: Masuk pada t-code ME22N/ME23N														
+Langkah 2: Cek apakah item PO telah terdapat tab Purchase Order history, jika iya, berarti PO item telah dilakukan GR dan/atau cancellation GR														
+Jika telah terdapat GR dan/atau cancellation GR maka tidak dapat lagi dilakukan perubahan Plant														
+Hal tersebut adalah standard SAP behavior														
+Maka yang dapat dilakukan adalah, pastikan item PO tersebut GR nya telah di cancel, lalu delete item tersebut dan buat item baru dengan Plant yang benar							
+Jika PO tersebut merupakan PO B2B/OGS maka harus dikirimkan dulu ke interface baru dapat dilakukan GR kembali atas item baru PO									
+Langkah 3: Jika PO belum terdapat tab Purchase Order History, maka cek apakah Tab Confimations pada Item PO telah terisi											
+Jika telah terisi maka hapuskan isian tab Confirmations:						
+a. Order Ack.												
+b. Kolom Quantity											
+c. Tekan Enter												
+d. Untick Acknowl.Reqd											
+e. Conf.Control											
+Langkah 4: Baru kemudian ubah Plant dan Storage Location					
+Langkah 5: Jika langkah-langkah 3 dan 4 telah dilakukan maka PO dapat dikirim ulang ke interface dengan tidak tick ""Reprocess""										
+Langkah 6: Setelah di GR ulang, maka dapat melakukan send GR ke Axis	"
+Bagaimana cara menemukan nomor Purchase Order Ellipse atas open purchase order yang dimigrasikan ke SAP?	"Langkah 1: Input TCODE = ME2N
+Langkah 2: Klik dynamic selection, lalu klik tanda panah sebelah kiri Purchase Order Header
+Langkah 3: Cari dan double click field Our Reference
+Langkah 4: Masukkan nomor PO Ellipse di field Our Reference
+a. Jika hanya ingin mencari 1 nomor PO dapat diisikan di field Our Reference
+b. Jika ingin mencari beberapa nomor, dapat diinputkan di Multiple Selection
+Langkah 5: Isikan Scope of List: ALV
+Langkah 6: Execute
+Langkah 7: Dapat menggunakan report ZMM_RPT_POCONS dengan menggunakan field selection Our Reference"
+Bagaimana cara mengatasi error "System status TECO/CRTD is active" saat tidak bisa goods receive PO?	"Langkah 1: Jika error message yang ditampilkan adalah ""System status CRTD is active"", maka komunikasikan dengan Planner untuk release MO (Work Order)
+Langkah 2: Jika error message yang ditampilkan adalah ""System status TECO is active"", maka komunikasikan dengan Planner untuk unteco MO (Work Order)"
+Bagaimana cara mengetahui nilai total PO consignment dalam USD ?	"Untuk melihat secara individual
+Langkah 1: Input TCODE = ME23N
+Langkah 2: Khusus untuk PO Consignment (PO Type 2004), harga muncul di tab Customer Data.
+a. Pada Header PO, tab Customer Data merupakan total value PO
+b. Pada Item PO, Tab Customer Data merupakan value per item
+Untuk melihat secara massal dapat melalui tcode ZMM_RPT_POCONS
+Harga consignment per unit ada pada kolom Cons Price (USD), dan total pada kolom Cons.Value (USD). Dan untuk total value Header PO ada pada kolom Cons Value (Header)"
+Bagaimana cara mengatasi error ketika melakukan revisi Plant dari PO yang menggunakan RFQ?	"Langkah 1: Gunakan t-code ME22N/ME23N					
+Langkah 2: Cek apakah pada item PO terdapat nomor RFQ				
+Jika terdapat RFQ, maka dapat double klik nomor RFQ tersebut dan cek Plant yang digunakan pada RFQ tersebut					
+Langkah 3: Jika Plant yang digunakan di RFQ berbeda dengan Plant yang akan diganti di PO, hal tersebutlah yang menyebabkan error Outline Agreement			
+Karena berdasarkan standard SAP, Plant pada PR, RFQ dan PO harus sama.
+Jika sudah terlanjur dibuatkan PO, maka nomor RFQ dapat dihapuskan agar Plant dapat diubah									
+Langkah 4: Sebaiknya hapuskan RFQ pemenang dengan plant yang tidak sesuai, kemudian buatkan RFQ baru dengan plant yang sesuai dengan mengisikan nomor RFQ lama di field Your Reference untuk menandakan bahwa RFQ baru berasal dari RFQ pemenang lama"
+Bagaimana cara menemukan informasi PO yang sudah atau belum di acknowledge oleh supplier?	"Langkah 1: Input TCODE = ME2N
+Langkah 2: Pilih variant sesuai dengan kebutuhan
+Langkah 3: Klik tombol Dynamic Selections
+Langkah 4: Untuk mencari PO yang sudah di Acknowledge oleh Supplier maka dapat diisikan seperti ini
+Rejection Indicator = blank dan Acknowledgement Reqd = X
+Langkah 5: Untuk mencari PO yang direject oleh Supplier maka dapat diisikan seperti ini:
+Rejection Indicator = X
+Acknowledgement Reqd = X
+Langkah 6: Untuk mencari PO yang belum di Acknowledge oleh Supplier dapat diisikan seperti ini:
+Rejection Indicator = blank
+Acknowledgement Reqd = blank
+Langkah 7: Isikan informasi lain pada selection screen ME2N, kemudian Execute
+Contoh: Purchasing Organization = 2000, Scope of List = ALV,Purchasing Group = M*
+Langkah 8: Informasi PO not acknowledged dan acknowledged oleh supplier dapat ditampilkan
+													
+	 "
+Bagaimana cara mengisikan deskripsi kontrak di PIR supaya deskripsi tersebut dapat muncul di BRMS?	"Langkah 1: Jalankan tcode ME11/ME12
+Langkah 2: Masukkan kode material, vendor, dan Plant
+Langkah 3: Lalu ke tombol Texts
+Langkah 4: Masukkan agreement description
+Langkah 5: Save"
+Bagaimana cara mengatasi error "PO Ordered quantity exceeded by X EA: 3XXXXXXXXX 2013 XXX" pada saat goods receive jika PO relevan ke OGS?	"Langkah 1: Cek total GR quantity yang dikirimkan dari OGS dengan menggunakan Tcode ZMM_INTF_RPT, Buka tcode ZMM_INTF_RPT.
+Langkah 2:  Masukan session ID, Interface Status, dan Date
+Langkah 3:  Klik Execute
+Langkah 4:  Periksa Outstanding Quantity di PO via ME23N
+Langkah 5:  Bandingkan quantity
+Langkah 6:  Komunikasikan ke tim SCM / Procurement apabila dibutuhkan untuk memperbaiki quantity"
+Bagaimana cara mengatasi error "User XXXXXXXXXX already processing Purchasing doc. item 3XXXXXXXXX XXXXX" pada saat receive jika PO relevan ke OGS?	"Langkah 1: Perlu untuk retrigger integrasi GR OGS dengan mengirim email ke Interface Admin OGS
+Langkah 2: Persiapkan Comlog ID dari laporan harian yang dikirimkan dari OGS dengan menggunakan Session ID / PO No sebagai kunci
+Langkah 3: (Optional) Jika tidak bisa menemunkan Comlog ID, maka cari nomor MR dengan menggunakan ZMM_INTF_RPT di kolom ""Reference""
+Langkah 4: Kirimkan informasi PO beserta Comlog ID/Nomor MR ke tim OGS untuk diretrigger"
+Bagaimana cara mengatasi error "500 Server Error: Internal Server Error for url: https://30-amnt.it-cpi012-rt.cfapps.ap21.hana.ondemand.com/http/I-MM-017" pada saat receive jika PO relevan ke OGS?	"Langkah 1: Perlu untuk retrigger Integrasi GR OGS mengirim email ke Interface Admin OGS
+Langkah 2: Persiapkan Comlog ID dari laporan harian yang dikirimkan dari OGS dengan menggunakan Session ID / PO No sebagai kunci
+Langkah 3: (Optional) Jika tidak bisa menemunkan Comlog ID, maka cari nomor MR dengan menggunakan ZMM_INTF_RPT di kolom ""Reference""
+Langkah 4: Kirimkan informasi PO beserta Comlog ID/Nomor MR ke tim OGS untuk diretrigger"
+Bagaimana cara mengatasi error "No goods receipt possible for purchase order 3XXXXXXXXX XXXXX" pada saat receive jika PO relevan ke OGS?	"Langkah 1: Buka Tcode ME23N dan masukan Nomor PO
+Langkah 2: Periksa data Confirmation di setiap PO Line Item
+Langkah 3: Jika vendor merupakan B2B Vendor, apabila tidak terdapat Confirmation Key, hubungi tim Procurement untuk memasukkan confirmation key secara manual dengan Qty dan Delivery Date
+Langkah 5: Periksa apakah PO tersebut sudah di release secara full atau tidak dengan memeriksa tab Release di Header PO
+Langkah 6: Apabila quantity di tab Confirmation melebihi quantity ada yang ada di PO line item, maka harus menghubungi Procurement/Logistic untuk melakukan pengecekan lebih lanjut
+Langkah 7: Pastikan PO line item tidak terhapus"
+Bagaimana cara mengatasi error "PO has not been interfaced to OGS" pada saat receive jika PO relevan ke OGS?	"Langkah 1: Case GR dari PO Ellipse: Komunikasikan ke SAP support untuk periksa apakah nomor PO SAP baru sudah dimaintain di database Master PO OGS, jika masih belum terisi maka request tim SAP support untuk mengisikan informasi PO tersebut
+Langkah 2: Case GR dari PO baru: Periksa apakah PO telah diinterface ke OGS atau belum dengan menggunakan Tcode ME2N
+Langkah 3: Kirimkan informasi PO beserta Comlog ID/Nomor MR ke tim OGS untuk diretrigger"
+Bagaimana cara mengatasi error "Purchasing document 3XXXXXXXXX not yet released" pada saat receive jika PO relevan ke OGS?	"Langkah 1:  Gunakan Tcode ME23N untuk melihat dokumen PO
+Langkah 2:  Klik tab Release Strategy di bagian Header Detail untuk periksa status approval dari PO tersebut
+Langkah 3: Jika PO tersebut belum di approve, maka komunikasikan ke tim prourement untuk melakukan approve PO"
+Bagaimana cara mengatasi error "Please maintain mapping cost center 2011123000 and G/L account 5020607000" pada saat receive jika PO relevan ke OGS?	"Langkah 1:  Gunakan Tcode ME23N untuk melihat dokumen PO
+Langkah 2: Klik tab Account Assignment di bagian Item Detail untuk melihat G/L account dan cost object (Cost Center, WBS, IO, dll)
+Langkah 3: Komunikasikan ke tim costing dan lampirkan informasi G/L account dan cost object untuk diperiksa lebih lanjut"
+Bagaimana cara mengatasi error "Storage location SIN does not exist in plant 2011" pada saat receive jika PO relevan ke OGS?	"Langkah 1: GR dari PO lama: Informasikan ke tim SCM untuk revisi PO line item ke Plant (2013)
+Langkah 2: GR dari PO baru: Informasikan ke tim Procurement untuk merevisi PO line item ke Plant (2013)
+Langkah 3: Kirimkan informasi PO beserta Comlog ID/Nomor MR ke tim OGS untuk diretrigger"
+Bagaimana cara mengatasi error  "Material 3005948587 2013 LAX does not exist" pada saat receive jika PO relevan ke OGS?	"Langkah 1: Informasikan ke tim IC untuk extend material ke Storage Location yang dibutuhkan
+Langkah 2: Kirimkan informasi PO beserta Comlog ID/Nomor MR ke tim OGS untuk diretrigger"
+Bagaimana cara mengatasi error  "The line item has been fully received"?	"Langkah 1: Gunakan Tcode ME23N untuk menampilkan dokumen PO
+Langkah 2: Periksa PO history untuk GR material document di SAP
+Langkah 3: Apabila GR telah dilakukan, maka kirimkan informasi PO beserta Comlog ID/Nomor MR ke tim OGS untuk dikeluarkan dari laporan harian OGS GR karena GR tersebut sudah ada di SAP"
+Bagaimana cara menyelesaikan error "System status CRTD is active (ORD 210000009798)" pada saat receive jika PO relevan ke OGS?	"Langkah 1: Masukan TCODE ME23N untuk menampilkan data Account Assignment pada PO
+Langkah 2: Komunikasikan error tersebut ke tim Planer untuk approve Maintenance Order
+Langkah 3: Setelah MO di approve (Status: REL), maka kirimkan informasi PO beserta Comlog ID/Nomor MR ke tim OGS untuk ditrigger kembali GR"
+Bagaimana cara menyelesaikan error message "Duplication of MR Number Exist" pada saat receive jika PO relevan ke OGS?	"Langkah 1: Gunakan Tcode ME23N untuk menampilkan dokumen PO
+Langkah 2: Periksa PO history untuk GR material document di SAP
+Langkah 3: Apabila GR telah dilakukan, maka kirimkan informasi PO beserta Comlog ID/Nomor MR ke tim OGS untuk dikeluarkan dari laporan harian OGS GR karena GR tersebut sudah ada di SAP"
+Bagaimana cara menyelesaikan error message "Duplication of PO Line Item and Receiving No exists" pada saat receive jika PO relevan ke OGS?	"Langkah 1: Persiapkan informasi Comlog ID ataupun nomor MR untuk penerimaan tersebut
+Langkah 2: Kirimkan informasi PO beserta Comlog ID/Nomor MR ke tim OGS untuk dilakukan pengecekan lebih lanjut dan koreksi"
+Bagaimana cara upload ulang data Packaging pada proses pembatalan di TCODE MIGO?	"Langkah 1: Lakukan penghapusan data GR dan Package dengan menggunakan data Material Document lama
+Langkah 1a: Masukkan TCODE ZMM_PACK_UPLOAD
+Langkah 1b: Masukkan nomor material document yang akan di-cancel, kemudian klik Download
+Langkah 1c: Lakukan perubahan data GR dan Package pada file excel dan pastikan nilai quantity adalah nol
+Langkah 1d: Unggah data yang telah direvisi pada TCODE ZMM_PACK_UPLOAD
+Langkah 2: Klik Report untuk memastikan data Packaging dan GR sudah terhapus
+Langkah 3: Lakukan cancellation terhadap material document yang dibutuhkan untuk di cancel
+Langkah 4: Lakukan GR ulang dengan menggunakan TCODE MIGO
+Langkah 5: Lakukan pengunggahan ulang untuk GR dan Packaging pada TCODE ZMM_PACK_UPLOAD dengan menggunakan material document baru"
+Bagaimana cara mengatasi error "Item 00010 Requirement No. XXXXXXXXX does not match"?	"Langkah 1: Lakukan pengecekan data GR dan Packaging pada TCODE ZMM_PACK_UPLOAD
+Langkah 2: Bandingkan nomor material pada ZMM_PACK_UPLOAD dengan nomor material yang digunakan pada STO Line Item
+Langkah 3: Lakukan pengecekan ulang dengan tim logistik untuk memastikan data GR dan Package ter upload secara tepat (Requiremet Tracking Number yang diisikan di STO sudah terupload di ZMM_PACK_UPLOAD)
+Langkah 4: Apabila data GR dan Packaging tidak terunggah secara tepat, berikan saran kepada tim logistik untuk melakukan revisi pada TCODE ZMM_PACK_UPLOAD
+Langkah 5: Kembali ke STO dan tekan tombol Check setelah data GR dan Packaging sudah direvisi
+Langkah 6: Pastikan quantity yang diupload via ZMM_PACK_UPLOAD sama dengan quantity STO line item dimana RTN tersebut di isikan"
+Bagaimana cara mengatasi berberaa Outbound Delivery yang terbuatkan dari Tcode VL10B? (satu STO menghasilkan beberapa DO)?	"Langkah 1: Jika masih di screen VL10B, Pilih semua data Outbound Delivery dan tekan tombol delete, bisa menghapus outbound delivery dengan menggunakan VL02N
+Langkah 2: Jika masih di screen VL10B, maka klik Origin Doc untuk mengakses layar STO, atau buka TCODE ME23N dan input nomor STO
+Langkah 3: Pastikan data Delivery Date mempunyai nilai yang sama untuk setiap item STO. Apabila terdapat perbedaan, tekan tombol Fast Change untuk menyamakan semua data
+Langkah 4: Pastikan data Delivery Issuing Sloc dan Receiving Sloc mempunyai nilai yang sama untuk semua item STO. Apabila terdapat perbedaan, user harus melakukan pembaharuan data secara manual
+Langkah 5: Pastikan data Incoterm mempunyai nilai yang sama untuk semua item STO. Apabula terdapat perbedaan, tekan tombol Fast Change untuk menyamakan semua data
+Langkah 6: Pastikan data Delivery Address mempunyai nilai yang sama untuk semua item STO. Apabila terdapat perbedaan, tekan tombol Reset Address
+Langkah 7: Gunakan TCODE VL10B untuk membuat Outbound Delivery"
+Bagaimana cara mengatasi Inbound Delivery tidak terbuat dari PO untuk CPT/CIF BEN?	"Langkah 1: Berikan informasi kepada tim Procurement untuk melakukan pembaharuan Confirmation Key menjadi Z002
+Langkah 2: Apabila terdapat Confirmation Key dengan nilai Z001 dan sudah dihubungkan dengan Purchase Order Goods, lakukan penghapusan untuk informasi Order Ack., Delivery Date, Time, Quantity, Reference, dan Created On
+Langkah 3: Hapus ceklis pada tombol Acknowledgement Required
+Langkah 4: Perbarui Confirmation Control menjadi Z002
+Langkah 5: Masukkan TCODE VL31N untuk membuat Inbound Delivery"
+Bagaimana cara mengatasi Outbound Delivery yang terbuat dengan quantity nol?	"Langkah 1: Gunakan TCODE MBBE untuk melakukan pengecekan stok, Jika Stock sudah mencukupi dan Outbound Delivery masih terbuatkan dengan quantity 0, maka lanjutkan ke Langkah 2, 
+Langkah 2: Gunakan TCODE CO09 untuk melakukan pengecekan ketersediaan material apakah material tersebut sudah terikat dengan OD lainnya atau tidak, jika terdapat berberapa OD yang dibuatkan untuk sebuah material dengan quantity yang tidak cukup, maka lakukan pengecekan OD tersebut apakah terdapat duplikasi STO yang terbuatkan,
+Langkah 3: Lakukan pengecekan PO STO untuk mendapatkan data PO original dan cek apakah GR sudah dilakukan atas PO original tersebut
+Langkah 4: Masukkan TCODE MB51 untuk melacak pergerakan barang
+Langkah 5: Lakukan perbaikan sesuai dengan kasus yang ditemukan dari langkah langkah sebelumnya"
+Bagaimana cara menyelesaikan error tidak bisa melakukan PGI OD karena defisit DC Materials?	"Langkah 1: Check PO Original apakah sudah dilakukan GR dari PO Original (dengan menggunakan RTN)
+Langkah 2: Check status PO STO sebelumnya apakah STO sebelumnya sudah di GR?
+Langkah 3: Check MB51 untuk menganalisa pergerakan barang di hub, apakah quantity DC ini tidak mencukupi dikarenakan material sudah digunakan oleh STO lainnya?
+Langkah 4: Mohon untuk menghubungi tim Logistic untuk dianalisa kembali jika masih belum mendapatkan solusi dari pengecekan tcode MB51
+Langkah 5: Jika tidak bisa menemukan solusi untuk Langkah 1 - 4, maka lakukan penambahan stok dengan Movement Type 511 dengan catatan
+Langkah 6: Lakukan GI Outbound"
+Bagaimana cara menyelesaikan error tidak bisa melakukan PGI OD karena keberadaan Batch di STO untuk DC material dengan pesan "Check Table XMCHA: Entry"?	"Langkah 1: Lakukan pengecekan batch di dokumen STO khusus untuk line item material DC
+Langkah 2: Apabila terdapat material DC dengan batch yang sudah terinput, lakukan langkah berikut:
+*Reverse OD jika PGI belum dilakukan
+*Hapus batch di PO STO line item untuk DC material
+*Lakukan pembuatan ulang Outbound Delivery
+
+Apabila shipment cost sudah terbentuk, lakukan langkah berikut:
+*Tambah Account Assignment K untuk line item STO yang salah
+* Lakukan PGI Outbound
+* Tambah stok dengan 511 Mvt, wajib untuk menginformasikan tim Logistik untuk melakukan aktivitas ini"
+Bagaimana cara menyelesaikan error tidak bisa melakukan Post Goods Issue OD dengan material consignment ?	"Langkah 1: Periksa stok di MMBE untuk Material yang error
+Langkah 2: Apabila ada stok parsial untuk UU dan Consignment Stock, lakukan transfer stok UU menjadi Consignment, kemudian lakukan Post Goods Issue OD, setelah itu transfer stock Consignment tersebut ke UU
+Langkah 3: Pastikan PIR sudah terbuat untuk Plant 2011 dan 2013
+Langkah 4: Pastikan harga pada PIR sudah sesuai dan belum expired
+Langkah 5: Pastikan user mempunyai otorisasi untuk melakukan transfer posting dengan movement type 924"
+Bagaimana cara menangani satu packaging untuk beberapa PO?	"Langkah 1: Lakukan Goods Receipt untuk beberapa PO yang akan digabungkan menjadi satu packaging (satu material document terdiri beberapa PO)
+Langkah 2: Download template GR dan Package berdasarkan Material Document
+Langkah 3: Isi data GR dan Packaging seperti biasa
+Langkah 4: Upload kembali data yang sudah terisi melalui tombol Upload"
+Bagaimana cara mengubah data PO/STO yang sudah di lock karena Shipment Start Date sudah terisi?	"Langkah 1 (PO Goods): Berikan informasi kepada tim SCM untuk melakukan perubahan pada PO
+Langkah 2 (PO STO): Berikan informasi kepada Tim Logistic dan Exim untuk melakukan perubahan pada STO"
+Bagaimana cara membatalkan Goods Receipt pada TCODE MIGO karena FI Posting Period sudah tertutup?	Langkah 1: Perbarui Posting Date sebelum membatalkan GR dengan cara mengubah posting date menjadi tanggal hari ini
+Bagaimana cara menyelesaikan error tidak terbuatnya Outbound Delivery pada TCODE VL10B?	"Langkah 1: Periksa data PO History untuk mencari apakah Outbound Delivery sudah terbuat atau belum
+Langkah 2: Jika Outbound Delivery belum ada di PO history, maka lakukan VL10B kembali untuk melakukan pembuatan OD
+Langkah 3: Sistem akan mengulangi hasil yang sama yaitu OD tidak berhasil dibuatkan
+Langkah 4: Klik tombol Log for Delivery Creation
+Langkah 5: Klik tombol Notes
+Langkah 6: System akan menampilkan pesan error atas tidak terbuatnya Outbound Delivery"
+Bagaimana cara untuk menampilkan informasi Packaging dari STO?	"Langkah 1: Cari informasi isi Container dan PO STO/OD line item dengan menggunakan tcode VL03N (Contoh: OD Line 50, 60, 70 dipack didalam satu container)
+Langkah 2: Cari Requirement Tracking Number menggunakan TCODE ZMM_RPT_POCONS
+Langkah 3: Cari GR dan Package yang terunggah menggunakan ZMM_PACK_UPLOAD dengan RTN sebagai Key"
+Bagaimana cara menyelesaikan error tidak semua line item STO berhasil di tampilkan pada ZMM_SHIPMENT_TAX?	"Langkah 1: Periksa apakah terdapat Requirement Tracking Number yang duplikat di STO
+Langkah 2: Lakukan revisi STO untuk mengisi RTN yang sesuai"
+Bagaimana cara untuk meminta bantuan untuk mengubah data CIPL & PIB secara manual?	"Langkah 1: Siapkan data yang akan diperbaiki oleh tim SAP support
+Langkah 2: Lampirkan data yang sudah disiapkan (termasuk Shipment Number) ke SAP support supaya bisa di update perbaikanya
+Langkah 3: Jika ingin mengkoreksi PIB yang sudah terbayarkan, lakukan cara yang sama yaitu: jalankan langkah 1 dan langkah 2
+Langkah 4: Setelah data di update oleh tim support, lakukan pengecekan untuk hasil perbaikan dengan menggunakan tcode ZMM_IMP_REL_RPT"
+Bagaimana cara melakukan pemeriksaan untuk error "entry 300000625200001 00001  does not exist" untuk integrasi GR OGS?	"Langkah 1: Laporkan error berikut ke tim SCM atau SAP support dengan melampirkan error ini
+Langkah 2: Tim SAP akan melakukan revisi untuk mapping PO Line Item Ellipse dan SAP Line Item dari sisi teknikal (konfigurasi)
+Langkah 3: Tim SAP/SCM akan menginformasikan ke admin OGS untuk retrigger GR yang gagal"
+Bagaimana langkah untuk melakukan pemeriksaan terhadap kegagalan GI Outbound Delivery?	"Langkah 1: Periksa outbound delivery dengan menggunakan VL03N atau VL06O, pastikan tidak ada material di outbound delivery dengan Delivery quantity 0
+Langkah 2: Periksa ketersediaan barang atas material yang ada di outbound delivery dengan menggunakan MB52 berdasarkan issuing plant / storage location di STO atau Plant / sloc di tab picking,  Ketika menggunakan MB52, pastikan button ""Also include Special Stock"" di pilih, dan isikan dengan K
+Langkah 3: Jika stock tersedia dalam consignment stock (special stock K), namun gagal goods issue terjadi lakukan langkah2 sebagai berikut
+Langkah 3.1: Buka transaksi MM03 untuk melakukan pengecekan terhadap stock determination dengan memilih field General Plant Data  / Storage 2. Sesuaikan Plant dengan Issuing Plant di outbound delivery
+Langkah 3.2: Field stock determination group harus memiliki isi. Jika issuing plant = 2011, field ini harus diisi dengan value ""2011"" jika 2013, maka harus diisi dengan value ""2013""
+Langkah 3.3: Jika field determination untuk material yang stock nya ada di special stock K kosong, maka harus dilakukan update material master
+Langkah 4.4: Setelah dilakukan update, maka outbound delivery tersebut harus di delete, dan dilakukan pembuatan ulang  karena stock determination group harus benar sebelum outbound delivery dibuat
+Langkah 5: Periksa apakah ada STO yang dibuat 2 kali dengan nomor RTN yang sama, dengan menggunakan report ME2N untuk menampilkan STO dengan RTN yang sama (menggunakan RTN sebagai search parameter)
+Langkah 6: Jika tidak ada STO double yang dibuat, maka yang dilakukan berikutnya adalah dengan melakukan pengecekan pergerakan barang dengan menggunakan MB51. Jika PO bukan PO data migration, check di MB51 berdasarkan Purchasing document dan movement type 101 untuk memeriksa apakah PO tersebut sudah di GR atau belum. Periksa beberapa hal berikut untuk movement type 101 yang muncul
+1. Jika stock bukan DC, pastikan PO tersebut tidak memiliki account assignment. Jika mendapati stock memiliki account assignment, maka lakukan perbaikan dengan menghubungi procurement team, lakukan cancel GR dan hilangkan account assignment di PO tsb.
+Note : Jika PO memiliki account assignment untuk material non DC, maka stock akan hilang setelah di GR (consumed)
+
+2. Jika di MB51 tidak ada result / data yang muncul maka PO tersebut belum di GR, periksa transaksi GR OGS (interface) / hubungi CKB ataupun KN dan tim Logistic untuk melakukan GR"
+Bagaimana cara melakukan re-print PO form di TCODE ME9F?	"Langkah 1: Gunakan tcode ME9F untuk mencetak ulang dokumen PO
+Langkah 2: Input PO number dan Processing status dengan nilai 1 (successfully processed) untuk mencetak dokumen PO yang sudah di print sebelumnya
+Langkah 3: Klik tombol Execute
+Langkah 4: Centang PO yang ingin di cetak ulang
+Langkah 5: Klik tombol Display Message
+Langkah 6: PO form akan ditampilkan untuk di cek lebih lanjut
+Langkah 7: Setelah PO form sudah di cek, maka klik tombol print untuk menyimpan PO form tersebut dalam format PDF"
+Bagaimana cara menambahkan line item material DC Free of Charge di PO untuk kebutuhan Logistik?	"Langkah 1: Penambahan Line Item untuk Free of Charge sudah tidak memungkinkan dikarenakan terdapat validasi tambahan yang diaplikasikan agar PO tidak bisa dibuatkan dengan home warehouse yang berbeda
+Langkah 2: Buatkan PO baru untuk material DC tambahan supaya bisa di GR oleh tim logistik"
+Bagaimana cara menyelesaikan run time error ketika mengunduh data dari ZMM_MONTHLY_INVNTR?	"Untuk mencegah hal tersebut terjadi, unduh report tersebut melalui email yang dijalankan secara background, dengan cara:		
+Langkah 1: Isikan bulan dan tahun penarikan data	
+Langkah 2: Isikan pilihan yang akan diambil datanya (contoh: Plant = 2011)
+Langkah 3: Pilih layout untuk digunakan sesuai dengan jenis laporan
+	a	. Jika Own Stock maka layout yang dipilih adalah /STANDARD
+	b	. Jika Consignment Stock maka layout yang dipilih adalah /STANDARDCON
+	c	. Jika Storage Location maka layout yang dipilih adalah /STANDARDSTO
+	d	. Jika Dues In, Dues Out maka layout yang dipilih adalah /STANDARDDUE
+Langkah 4: Isikan alamat email yang akan dikirimkan datanya	
+Langkah 5: Klik Menu Program Execute in background	
+"
+Bagaimana cara menyelesaikan error "Invalid Value 3XXXXXXXXX of parameter PO Number pada saat mengirim PO ke OGS?	"Langkah 1: Check PO tersebut apakah PO ini adalah PO migrasi atau tidak
+Langkah 2: Jika PO tersebut adalah PO migrasi, mohon untuk check nomor PO ellipse dengan menggunakan ME23N field Our Reference
+Langkah 3: Periksa PO elipse tersebut apakah sudah terkirimkan sebelumnya ke OGS
+Langkah 4: Jika PO ellipse belum pernah dikirimkan sebelumnya, mohon untuk informasikan ke tim SCM untuk dicek lebih lanjut
+Langkah 5: Jika PO tersebut adalah PO non migrasi dan tidak bisa dikirimkan ke OGS, mohon untuk informasikan ke SAP support untuk dicek lebih lanjut"
+Bagaimana cara melakukan penghapusan data Source List secara massal?	"Langkah 1: Masukkan TCODE ME07
+Langkah 2: Masukkan data Material Number, Plant
+Langkah 3: Kemudian isi field ""Delete All Record Valid Until"", sistem akan menghapus Source List sampai dengan validity date yang diisikan di field ini
+Langkah 4: Klik Execute
+Langkah 5: Periksa kembali untuk source list yang terhapuskan dengan tcode ME03"
+Bagaimana cara membuat variant pada Report ME5A (berlaku untuk report lainnya)?	"Langkah 1: Masukan TCODE ME5A
+Langkah 2: Masukan field yang dibutuhkan (Contoh: Plant, PR Document Type, Purchasing Group, dll)
+Langkah 3: Masukan field tambahan yang terdapat pada dynamic selection (Contoh: Processing Status, Deletion Indicator, dll)
+Langkah 4: Klik tombol Save
+Langkah 5: Isi Variant Name untuk nama variant yang akan disimpan
+Langkah 6: Isi Variant Description
+Langkah 7: Klik tombol Save
+Langkah 8: Variant sudah bisa digunakan kembali ketika ME5A digunakan dengan klik menu Goto -> Variant -> Get, kemudian pilih Variant yang sudah dibuat sebelumnya"
+Bagaimana cara menampilkan informasi hubungan (linkage) antara PR dan RFQ di SAP?	"Langkah 1: Masukan TCODE ME4N
+Langkah 2: Masukan Delivery Date pada selection screen untuk mendapatkan daftar RFQ yang telah dibuat
+Langkah 3: Tekan Execute
+Langkah 4: Setelah report ditampilkan, lanjut untuk tekan tombol Delivery Schedule
+Langkah 5: Tabel hubungan antara PR (kolom Purch. Req) dan RFQ  (kolom Purch. Doc) akan terlihat
+Langkah 6: Apabila data PR tidak muncul pada report ME4N, artinya RFQ untuk PR tersebut belum pernah terbuatkan sebelumnya
+Langkah 7: Report dapat di unduh dalam format excel apabila diperlukan."
+Bagaimana cara menampilkan informasi PR dan PO dalam bentuk report?	"Langkah 1: Buka TCODE ME2N
+Langkah 2: Masukan data selection screen yang dibutuhkan yaitu Plant, Material, Delivery Date, PO Document Type, dll
+Langkah 3: Masukan data yang terdapat pada Dynamic Selection Screen seperti nomor PR, Deletion Indicator, dll)
+Langkah 4: Klik tombol Execute
+Langkah 5: Setelah report ME2N ditampilkan, klik tombol Delivery Schedule
+Langkah 6 : Informasi PR dan PO akan muncul didalam report dalam bentuk ALV (tabel)"
+Bagaimana cara memperbaiki error "Data not Found" pada saat mengirimkan data PO ke B2B AXIS?	"Langkah 1: Masuk pada t-code ME22N/ME23N
+Langkah 2: Masuk ke Item PO, tab Confirmations, Cek apakah tab Confirmations telah terisi, jika telah terisi maka hapuskan isian tab Confirmations sesuai dengan langkah dibawah ini:
+Langkah 2.1: Hapus Order Ack.
+Langkah 2.2: Hapus Kolom Quantity
+Langkah 2.3: Tekan Enter
+Langkah 2.4: Untick Acknowl.Reqd
+Langkah 2.5: Kosongkan Conf.Control
+Langkah 3: Cek Incoterms field pada Header dan Item PO, field tersebut harus sama di Header dan Item PO
+Langkah 4: Cek Storage Location field harus terisi
+Langkah 5: Cek Approval PO, PO harus fully approved agar dapat di interface
+Langkah 6: Cek Supplier Material No. field di Item PO tab Material Data. Untuk material DC field tersebut harus terisi
+Langkah 7: Cek apakah Vendor tersebut masuk ke dalam list Vendor B2B atau tidak, Pada Header PO, tab Partners akan muncul Z1 (Sys.Agent – B2B Axis) jika Vendor tersebut masuk dalam list Vendor B2B dan Z2 (Sys.Agent - OGS) jika vendor tersebut masuk ke dalam list Vendor OGS
+Langkah 8: Cek apakah salah satu item PO telah full GR. Jika ada salah satu item sudah full GR, maka GR tersebut harus di cancel terlebih dahulu, Hubungi tim Warehouse untuk men-cancel GR tersebut
+Langkah 9: Jika langkah-langkah 1-8 telah dilakukan maka dapat dikirim ulang ke interface dengan tidak tick ""Reprocess"""
+Bagaimana cara memperbaiki error "PO Item is not available/maintained"  pada saat mengirimkan data PO ke B2B AXIS?	"Langkah 1: Masuk pada t-code ME22N/ME23N
+Langkah 2: Masuk ke Item PO, tab Confirmations, Cek apakah tab Confirmations telah terisi, jika telah terisi maka hapuskan isian tab Confirmations sesuai dengan langkah dibawah ini:
+Langkah 2.1: Hapus Order Ack.
+Langkah 2.2: Hapus Kolom Quantity
+Langkah 2.3: Tekan Enter
+Langkah 2.4: Untick Acknowl.Reqd
+Langkah 2.5: Kosongkan Conf.Control
+Langkah 3: Cek Incoterms field pada Header dan Item PO, field tersebut harus sama di Header dan Item PO
+Langkah 4: Cek Storage Location field harus terisi
+Langkah 5: Cek Approval PO, PO harus fully approved agar dapat di interface
+Langkah 6: Cek Supplier Material No. field di Item PO tab Material Data. Untuk material DC field tersebut harus terisi
+Langkah 7: Cek apakah Vendor tersebut masuk ke dalam list Vendor B2B atau tidak, Pada Header PO, tab Partners akan muncul Z1 (Sys.Agent – B2B Axis) jika Vendor tersebut masuk dalam list Vendor B2B dan Z2 (Sys.Agent - OGS) jika vendor tersebut masuk ke dalam list Vendor OGS
+Langkah 8: Cek apakah salah satu item PO telah full GR. Jika ada salah satu item sudah full GR, maka GR tersebut harus di cancel terlebih dahulu, Hubungi tim Warehouse untuk men-cancel GR tersebut
+Langkah 9: Jika langkah-langkah 1-8 telah dilakukan maka dapat dikirim ulang ke interface dengan tidak tick ""Reprocess"""
+Bagaimana cara untuk memperbaiki error "Plant Cannot be Changed" di PO? 	"Langkah 1: Masuk pada t-code ME22N/ME23N
+Langkah 2: Cek apakah item PO telah terdapat tab Purchase Order history, jika iya, berarti PO item telah dilakukan GR dan/atau cancellation GR
+Jika telah terdapat GR dan/atau cancellation GR maka tidak dapat lagi dilakukan perubahan Plant
+Maka yang dapat dilakukan adalah, memastikan item PO tersebut GR nya telah di cancel, lalu delete item tersebut dan buat item baru dengan Plant yang benar
+Jika PO tersebut merupakan PO B2B/OGS maka harus dikirimkan dulu ke interface baru dapat dilakukan GR kembali atas item baru PO
+Bisa dibuatkan PO baru sebagai salah satu alternatif untuk permasalahan ini
+Langkah 3: Jika PO belum terdapat tab Purchase Order History, maka cek apakah Tab Confimations pada Item PO telah terisi
+Langkah 4: Baru kemudian ubah Plant dan Storage Location
+Langkah 5: Lanjutkan proses selanjutnya untuk melakukan GR ataupun melakukan penigiriman ulang PO ke Axis / OGS"
+Bagaimana cara mencari material master berdasarkan deskripsi?	"Langkah 1 : Klik Search Help pada field Material Number atau tekan tombol F4
+Langkah 2: Klik tab ""Y: Search Material Description""
+Langkah 3: Isi Material Deskripsi yang ingin dicarikan di field ""Full Material description"", gunakan simbol * untuk mencari material yang mengandung kata yang ingin dicarikan, contoh: *FILTER*, search help akan mengeluarkan semua deskrisi yang mengandung kata Filter
+Langkah 4: Tekan Enter
+Langkah 5: Double Click untuk Material yang ingin digunakan untuk transaksi tertentu"
+Bagaimana cara mengetahui posisi bin atas suatu material?	"Langkah 1 : Gunakan Tcode MM03 untuk menampilkan informasi material
+Langkah 2: Masukan nomor material
+Langkah 3: Tekan Enter
+Langkah 4: Pilih View ""General Plant Data / Storage 1"" dan ""General Plant Data / Storage 2""
+Langkah 5: Tekan Enter
+Langkah 6: Isi Plant dan Storage Location untuk mengetahui Bin yang sudah di maintain sebelumnya
+Langkah 7: Klik tab General Plant Data / Storage 2
+Langkah 8: Bin Location tersedia di field Storage Bin 1 - 9"
+Bagaimana cara mengetahui material master sudah di extend ke storage location apa saja?	"Langkah 1 : Gunakan Tcode MM03 untuk menampilkan informasi material
+Langkah 2: Masukan nomor material
+Langkah 3: Tekan Enter
+Langkah 4: Pilih View ""General Plant Data / Storage 1"" dan ""General Plant Data / Storage 2""
+Langkah 5: Tekan Enter
+Langkah 6: Isi Plant
+Langkah 7: Klik Search Help di field ""Storage Location"" atau klik tombol F4
+Langkah 8: Sistem akan menampilkan Storage Location yang sudah ter-extend atas material tersebut"
+Bagaimana cara melakukan pergerakan barang secara massal?	"Langkah 1 : Gunakan Tcode ZMM_MIGO_MASS
+Langkah 2: Klik tombol ""Download Template"" untuk download template yang digunakan untuk melakukan GR dan GI secara massal
+Langkah 3: Isi template yang sudah di download sesuai dengan material yang akan di GR, GI dan Transfer Posting
+Langkah 4: Mohon untuk mengacu pada User Manual terkait transaksi perpindahan material secara masal / ZMM_MIGO_MASS untuk cara pengisian yang lebih detail
+Langkah 5: Upload template yang sudah diisikan sebelumnya di Langkah 3
+Langkah 6: Centang Test Run untuk mengecek data yang akan di upload apakah terdapat error atau sudah siap untuk di upload
+Langkah 7: Klik tombol Execute"
+Bagaimana cara mengetahui vendor yang di backcharge di reservasi?	"Langkah 1 : Gunakan Tcode MB25 untuk mendapatkan daftar reservasi dengan movement type 911 (Back Charge)
+Langkah 2: Copy salah satu nomor reservasi dengan menggunakan ctrl + c
+Langkah 3: Gunakan Tcode ZMB23
+Langkah 4: Masukan nomor Reservasi dan tekan Enter
+Langkah 5: Perhatikan field Vendor Code, kode Vendor Back Charge dan Deskripsi akan ditampilkan berdasarkan reservasi tersebut"
+Bagaimana cara melakukan update Purchase Info Record secara Massal?	"Langkah 1 : Gunakan Tcode ZMM_PIR_UPLOAD
+Langkah 2: Pilih Radio Button Download Template
+Langkah 3: Pilih aksi yang dibutuhkan untuk upload PIR secara massal, jika ingin membuat PIR maka pilih ""Create"", jika ingin mengubah PIR secara massal maka pilih ""Change""
+Langkah 4.1: Create - Klik Tombol Execute untuk download Template yang dibutuhkan
+Langkah 4.2 : Change - Masukan nomor PIR yang ingin di update kemudian klik tombol Execute
+Langkah 5: Isi template yang sudah di download dengan data yang sesuai
+Langkah 6: Mohon untuk menggunakan user manual Mass PIR Upload untuk paduan pengisian template secara detail
+Langkah 7: Pilih Radio Button Upload Data untuk meng-upload template yang sudah terisikan
+Langkah 8: Masukan file excel (path) untuk field File Path untuk template yang ingin di upload
+Langkah 9: Gunakan check box tes run jika ingin melakukan pengecekan terlebih dahulu
+Langkah 10: Klik Execute untuk menjalankan proses PIR Upload"
+Bagaimana cara mencegah agar Service Entry Sheet tidak dibuat untuk proforma invoice yang sama?	"Langkah 1 : Sebelum SES baru dibuatkan, mohon untuk komunikasikan ke tim SCM untuk dibantu penarikan daftar SES yang sudah pernah dibuatkan untuk kontrak tertentu
+Langkah 2: Cek kembali daftar SES yang sudah dibuatkan untuk memastikan apakah diperlukan untuk membuat SES baru atau SES tersebut sudah pernah dibuatkan
+Langkah 3: Bisa melakukan pengecekan sendiri juga dengan menggunakan ME23N dan klik tab PO history
+Langkah 4: Daftar SES akan ditampilkan di PO History untuk di cek kembali sebelum SES baru dibuatkan"
+Bagaimana cara melakukan pengecekan atas transfer posting consignment?	"Langkah 1 : Gunakan tcode ZMM_CONS_STO
+Langkah 2: Masukan informasi tanggal di selection screen untuk mengambil data consignment transfer posting yang sudah terbuat sebelumnya
+Langkah 3: Masukan field Interval = 10
+Langkah 4: Klik Execute
+Langkah 5: Jika Material Document tidak terisi untuk GI maka transfer posting tidak berhasil dilakukan, investigasi dibutuhkan untuk pengecekan terhadap transaksi yang tidak berhasil untuk transfer posting Consignment ke Own
+*dibutuhkan untuk review PIR, jumlah stock yang ada di warehouse, tidak boleh ada stock yang sebagian consignment dan sebagian normal stock
+Langkah 6: Jika Material Document tidak terisi untuk GR Inbound Delivery, maka perhatikan pesan error yang diberikan melalui field Error Message
+Langkah 7: Lakukan perbaikan sesuai dengan investigasi yang sama dengan langkah 5"
+Apa yang harus dilakukan jika agreement dengan vendor atas suatu barang berubah dari consignment  ke nomal atau sebaliknya?	"Perubahan dari Consignment ke Normal
+Langkah 1: Pastikan bahwa stok material consignment tersebut sudah kosong di sistem dengan melakukan transfer posting Consignment to Own (mvt 411)
+Langkah 2: Pastikan semua outstanding PR dan PO Consignment atas material tersebut sudah di close
+Langkah 3: Gunakan Tcode ME12 untuk menghapus PIR Consignment atau Request ke SCM/SAP Support untuk dibantu menghapus PIR Consignment secara massal
+Langkah 4: Informasikan ke tim Inventory Control untuk mengubah data material master field ""Special Procurement"" di view MRP 2 menjadi 10 (Consignment)
+
+Perubahan dari Normal ke Consignment
+Langkah 1: Pastikan semua outstanding PR dan PO Normal atas material tersebut sudah di close
+Langkah 2: Gunakan Tcode ME12 untuk menghapus PIR Normal atau Request ke SCM/SAP Support untuk dibantu menghapus PIR Normal secara massal
+Langkah 3: Informasikan ke tim Inventory Control untuk menghapus data material master field ""Special Procurement"" di view MRP 2 "
+Bagaimana cara untuk menampilkan PO dengan menggunakan Cost Center atau WBS ?	"Langkah 1 : Jika ingin menampilkan daftar PO dengan menggunakan Cost Center, gunakan Tcode ME2K
+Langkah 2: Masukan data Cost Center untuk field Cost Center
+Langkah 3: Masukan data IO untuk field Order
+Langkah 4: Klik Execute
+Langkah 5: Klik tombol Execute, daftar PO akan ditampilkan dengan menggunakan report ME2L
+"
+Bagaimana cara untuk melihat daftar PO dengan Cost Object (CC/IO/WBS)?	"Langkah 1: Jika ingin menampilkan daftar PO dengan menggunakan WBS, maka gunakan Tcode ME2J
+Langkah 2: Masukan kode ""000000000001"" untuk field Database prof.
+Langkah 3: Klik tombol Enter
+Langkah 4: Masukan data WBS yang akan digunakan untuk mengambil nomor PO
+Langkah 5: Klik tombol Execute, daftar PO akan ditampilkan dengan menggunakan report ME2J"
+Bagaimana cara untuk memperbaharui PR Replenishment & VHS yang tidak berhasil dikonversi otomatis menjadi PO?  	"Langkah 1: Cek PIR dan Source List untuk PR yang tidak berhasil untuk dikonversi menjadi PO sesuai dengan tipe PR
+Langkah 2: Melakukan perbaikan untuk extend PIR dan Source List jika terdapat PIR yang sudah expired
+Langkah 3: Menunggu 15 menit, sistem akan menjalankan background job untuk mengkonversi PR ke PO
+Langkah 4: Jika masih belum berhasil, mohon untuk menginformasikan kepada tim Inventory Control untuk dicek lebih lanjut"
+Bagaimana cara untuk memperbaharui PR Consignment yang tidak berhasil dikonversi otomatis menjadi PO?  	"Langkah 1: Cek PIR Consignment dan Source List untuk PR yang tidak berhasil untuk dikonversi menjadi PO sesuai dengan tipe PR
+Langkah 2: Melakukan perbaikan untuk extend PIR dan Source List jika terdapat PIR yang sudah expired
+Langkah 3: Menunggu 15 menit, sistem akan menjalankan background job untuk mengkonversi PR ke PO
+Langkah 4: Jika masih belum berhasil, mohon untuk menginformasikan kepada tim Inventory Control untuk dicek lebih lanjut"
+Bagaimana cara untuk memasukan OD yang sudah ter GI ke dalam dokumen Shipment?	"Langkah 1: Gunakan tcode VT02N atau VT01N untuk membuat dan merubah dokumen shipment
+Langkah 2.1: Create Shipment - Masukan Transportation Planning Point = 2013
+Langkah 2.2: Masukan Shipment Type dengan ZOUT
+Langkah 2.3: Klik tombol +Deliveries
+Langkah 2.4: Masukan nomor Outbound Delivery
+Langkah 2.5: Ubah Field Overall Goods Movement Status menjadi ""C""
+Langkah 3.1: Change Shipment - Masukan nomor shipment yang sudah pernah dibuatkan
+Langkah 3.2: Klik tombol +Deliveries
+Langkah 3.3: Masukan nomor Outbound Delivery
+Langkah 3.4: Ubah Field Overall Goods Movement Status menjadi ""C"""
+Bagaimana cara revisi Berat dan Volume OD yang sudah dibuat shipment ?	"Langkah 1 : Jika shipment cost sudah terbuatkan, maka harus menghapus dokumen shipment cost
+Langkah 2: Jika shipment document sudah terbuatkan, maka gunakan Tcode VT02N untuk change shipment yang bertujuan untuk un-assign dokumen Outbound Delivery dari shipment
+Langkah 3: Masukan nomor shipment
+Langkah 4: Klik Enter
+Langkah 5: Klik tombol Shipment and Deliveries untuk menampilkan dokumen Outbound yang sudah diassign ke dokumen shipment
+Langkah 6: Klik dokumen Outbound Delivery yang akan di keluarkan dari shipment terkait
+Langkah 7: klik kanan pada dokumen Outbound Delivery kemudian pilih ""Remove delivery from shipment""
+Langkah 8: Klik Save
+Langkah 9: Reverse PGI Outbound Delivery dengan menggunakan Tcode VL09
+Langkah 10: Perbaiki Berat dan Volume STO dengan menggunakan VL02N
+Langkah 11: Lakukan PGI kembali atas Outbound Delivery dengan menggunakan tcode VL02N
+Langkah 12: Assign kembali dokument OD ke shipment dengan menggunakan VT02N"
+Bagaimana cara untuk melakukan Offsite GR atas PO yang sudah terbuatkan dengan Plant 2011 (pengiriman sebagian menggunakan CPT BEN)?	"Langkah 1: Lakukan MIGO untuk menerima barang tersebut di Plant 2011 CRD
+Langkah 2: Siapkan Data Pack Upload didalam file excel untuk diupload sebagai data Pack dan RTN
+Langkah 3: Sebelum Pack Upload dilakukan, mohon untuk menginformasikan procurement untuk mengupdate Incoterm selain PA (sesuai dengan incoterm untuk pengiriman yang dilakukan sekarang contoh: PM, PN, dll)
+Langkah 4: Lakukan Pack Upload untuk mengupload data GR dan Pack
+Langkah 5: Informasikan kembali ke tim procurement untuk mengganti Incoterm menjadi PA
+Langkah 6: Transfer barang tersebut dari CRD ke Plant 2013 dengan storage location yang ditentukan tim Logistik
+Langkah 7: Buatkan STO untuk mengirimkan barang antar Storage Location di plant 2013 (contoh: SUB - BEN, BEN - LAY) menggunakan prosedur normal"
+Bagaimana cara untuk melakukan cancellation atas GR yang sudah di custom clearance?	"Langkah 1: Informasikan ke tim EXIM dan Logistik untuk mendiskusikan apakah dimungkinkan untuk melakukan cancellation atas penerimaan yang sudah di custom clearance
+Langkah 2: Jika keputusan dari tim EXIM diperbolehkan untuk cancel GR, maka jalankan prosedur cancellation GR seperti biasa
+Langkah 3: Lakukan perbaikan yang dibutuhkan setelah GR dicancel
+Langkah 4: Lakukan GR ulang atas PO yang diupdate"
+Bagaimana cara untuk memperbaiki shipment cost yang memiliki condition type warning (kuning) di bagian Single HU?	"Langkah 1: Gunakan Tcode VI02
+Langkah 2: Masukan Nomor Shipment Cost
+Langkah 3: Tekan Enter
+Langkah 4: Klik tab Single HU untuk melakukan pengecekan atas condition type yang diisikan per HU/Kontainer
+Langkah 5: Double Click pada nomor HU untuk menampilkan condition type yang sudah pernah di input untuk kontainer tertentu
+Langkah 6: Jika terdapat condition type ditandai warning, maka pastikan semua HU/kontainer memiliki condition type tersebut, setelah condition type tersebut di isikan untuk semua HU maka condition type tersebut bisa digunakan"
+Bagaimana cara untuk mengecek GR subcont yang tidak berhasil?	"Langkah 1: Periksa PO subcont untuk bagian komponen
+Langkah 2: Cek Tcode MMBE untuk memastikan material komponen tersebut sudah dikirimkan dan di transfer menjadi vendor stock 
+Langkah 3: Jika MMBE masih belum ada stok komponen maka hubungi tim warehouse dan logistik untuk memindahkan komponen ke lokasi tujuan dan lakukan transfer posting ke vendor stock (Mvt 541)
+Langkah 4: Jika MMBE menampilkan stock komponen yang belum tertransfer menjadi vendor subcont stock, maka hubungi logistik (Plant 2013) atau tim warehouse (Plant 2011) untuk melakukan transfer posting
+Langkah 5: Lakukan GR kembali atas PO subcont dengan menggunakan MIGO"
+Bagaimana cara untuk memperbaiki Error pada saat melakukan unpack HU?	"Langkah 1: Pastikan stock yang ada didalam Handlint Unit masih tersedia di sistem (belum terpakai / GI) 
+Langkah 2: Jika terdapat sebagian material yang sudah di transfer / Goods Issue, maka lakukan penyelidikan dan transfer material tesrebut ke lokasi asal
+Langkah 3: Lakukan unpack dengan menggunakan HUMO atau HU02"
+Bagaimana cara untuk mengetahui posisi dan status barang intransit  berdasarkan dengan nomor PR/PO?	"Langkah 1: Gunakan tcode ZMM_PO_LOG_RPT 
+Langkah 2: Isi parameter yang dibutuhkan untuk melacak posisi STO terakhir dari sebuah material seperti: nomor PO Orginal, Material Document, RTN
+Langkah 3: Klik Execute
+Langkah 4: Posisi STO terakhir akan ditampilkan untuk kolom STO, jika STO sudah ada Outbound dan Inbound yang terbentuk maka nomor Inbound dan Outbound akan ditampilkan di kolom masing masing
+Langkah 5: Mohon untuk perhatikan kolom Status untuk mengetahui kondisi barang per Requirement Tracking Number"
+Apa yang harus dilakukan jika forwarder tidak bisa merubah dokumen shipment yang sudah di shipment start? 	"Langkah 1: Informasikan ke tim Logistik beserta nomor shipment dan informasi apa saja yang ingin direvisi
+Langkah 2: Shipment document akan direvisi oleh tim logistic
+Langkah 3: Setelah shipment document selesai direvisi, freight forwarder sudah bisa melanjutkan aktivitas terkait shipment ini"
+Apa yang harus dilakukan oleh buyer ketika tidak bisa merubah dokumen PO yang sudah di lock?	"Langkah 1: Cek informasi yang terdapat di tab ""Customer Data"" di PO header
+Langkah 2: Jika check box PO is locked for edit tercentang, maka informasikan ke tim EXIM untuk unlock PO tersebut
+Langkah 3: Jika tim EXIM sudah melakukan unlock PO, maka lampirkan informasi yang ingin di revisi untuk PO tersebut ke SCM
+Langkah 4: Setelah tim SCM melakukan revisi, maka bisa dilanjutkan ke tahap selanjutnya"
+Bagaimana cara membuat PO Free of Charge Lokal dan Import?	"FOC Local
+Langkah 1: Centang kolom Free of Charge untuk menandakan bahwa PO line item tersebut adalah PO Free of Charge
+
+FOC Import
+Langkah 1: Isikan Harga terkecil untuk kolom Net Price, Contoh: 1 IDR, 0.01 USD, 0.01 EUR, dll
+Langkah 2: Klik tab Condition di bagian PO Item Detail
+Langkah 3: Masukan condition type ZPBS dan harga material yang seharusnya untuk digunakan sebagai perhitungan bea masuk, PPN, PPH dan PPNBM"
+Apa yang harus dilakukan jika PIR Consignment sudah expired?	"Langkah 1: Informasikan ke tim Warehouse untuk mengupdate material master untuk mencegah terjadinya pembuatan PIR consignment secara otomatis dari MRP (Field Automatic PO di untick dan menghapus data yang terisikan di field Special Procurement - MRP 2)
+Langkah 2: Jika sudah mendapat keputusan bahwa PIR akan diperpanjang, maka lakukan perpanjangan PIR dan informasikan ke warehouse supaya data di material master bisa diupdate kembali
+Langkah 3: Jika barang tersebut akan menjadi pembelian stock normal (non consignment), maka lakukan pembuatan PIR normal dan isikan harganya sesuai dengan agreement
+Langkah 4: PR akan secara otomatis terbentuk untuk permintaan pembelian barang normal
+"
